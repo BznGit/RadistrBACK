@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon_16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/favicon/favicon_24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon_48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon_64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon_96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon/favicon_128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="/favicon/favicon_256.png">
+
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+
+    
+<meta name="description" content="Арендуйте физический сервер с запуском от 2 минут и бесплатной заменой комплектующих. Все его ресурсы — только ваши">
+<meta name="keywords" content="Арендуйте физический сервер с запуском от 2 минут и бесплатной заменой комплектующих. Все его ресурсы — только ваши">
+
+
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Аренда выделенного сервера (dedicated) - Radistr</title>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header sub-menu ">
+    <div class="center">
+        <div class="logo">
+            <a class="logo-link" href="/">
+                <img class="logo-icon" src="/svg/logo.svg"/>
+            </a>
+        </div>
+        <button class="button mobile" id="menu-button">
+            <span class="line line-01"></span>
+            <span class="line line-02"></span>
+            <span class="line line-03"></span>
+        </button>
+        <div class="menu" id="primary-menu">
+    <div class="menu-group">
+        <div class="menu-item ">
+            <a class="item-link" href="/about">
+                <div class="link-text">О компании</div>
+            </a>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/services">
+                <div class="link-text">Услуги</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title">
+                    <a class="item-link" href="/services">Услуги компании Radistr</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/rack">Аренда серверной стойки</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/colocation">Размещение серверов</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/dedicated">Аренда серверов</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/cloud">Облачные решения</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/network">Сетевые услуги</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/backup">Резервное копирование <span class="mobile-hide">и&nbsp;восстановление данных</span> </a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/infosec">
+                        <span class="mobile-hide">Информационная безопасность</span>
+                        <span class="desktop-hide">Инфо-безопасность</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/environment">
+                <div class="link-text">Инфраструктура</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title">
+                    <a class="item-link" href="/environment">Инфраструктура компании Radistr</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/features">Технические особенности</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/cooling">Системы охлаждения</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/power">Системы электропитания</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/security">Системы безопасности</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/rooms">Серверные комнаты</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/networking">Подключение к&nbsp;сетям</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-group">
+        <div class="menu-item  checked ">
+            <a class="item-link" href="/price">
+                <div class="link-text">Цены</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title  checked ">
+                    <a class="item-link" href="/price">Цены компании Radistr</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/rack">Аренда серверной стойки</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/colocation">Размещение сервера <span class="mobile-hide">(colocation)</span></a>
+                </div>
+                <div class="sub-menu-item  checked ">
+                    <a class="item-link" href="/price/dedicated">Аренда сервера</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/vps">Виртуальные серверы <span class="mobile-hide">(VDS/VPS)</span></a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/storage">Хранение данных</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/support">Администрирование</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/ssl">Сертификаты <span class="mobile-hide">(SSL)</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/clients">
+                <div class="link-text">Клиентам</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title ">
+                    <a class="item-link" href="/clients">Клиентам</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/faq">
+                        <span class="mobile-hide">Часто задаваемые вопросы</span>
+                        <span class="desktop-hide">Частые вопросы</span>
+                    </a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/documents">Документы и&nbsp;соглашения</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/company">Реквизиты компании</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/support">Поддержка</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="https://my.radiushost.ru/billmgr" target="_blank" rel="nofollow">Личный кабинет</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/knowledge">
+                <div class="link-text">База знаний</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title ">
+                    <a class="item-link" href="/knowledge">База знаний</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/knowledge">Статьи и&nbsp;исследования</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/knowledge">Бизнес-кейсы</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a class="item-link" href="/contacts">
+                <div class="link-text">Контакты</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+        <div class="phone">
+            <a class="link" href="tel:+74956410412">
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/phone.svg"/>
+                </div>
+                <div class="link-text">+7 (495) 641-04-12</div>
+            </a>
+        </div>
+        <div class="login">
+            <a class="link" href="https://my.radiushost.ru/billmgr" rel="nofollow" target="_blank">
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/sign-in.svg"/>
+                </div>
+                <div class="link-text">Вход</div>
+            </a>
+        </div>
+        <a class="button primary circle white" href="https://my.radiushost.ru/billmgr?func=register" rel="nofollow" target="_blank">
+            <div class="button-icons">
+                <img class="icon icon-01" src="/svg/sign-up.svg"/>
+            </div>
+            <div class="button-text">Регистрация</div>
+        </a>
+    </div>
+    <div class="desktop-menu">
+        <div class="blur">
+            <div class="background">
+                <div class="center">
+                    <div class="sub-menu-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<div class="main content">
+    <div class="module page-banner animated"
+         style="background-image: url(/jpg/price_colocation_header_bg.jpg)">
+        <div class="module-center">
+            <div class="block-nav">
+                <a class="link" href="/price">
+                    <img class="icon" src="/svg/back_w.svg"/>
+                    <div class="text">Цены</div>
+                </a>
+            </div>
+            <div class="page-image rent">
+                <img class="image" src="/svg/price_dedicated.svg">
+            </div>
+            <div class="block-text">
+                <h1 class="title-1">
+                    <span class="title-text">
+                        Аренда выделенного<br/> сервера (dedicated)
+                    </span>
+                </h1>
+                <h2 class="title-2">
+                    Арендуйте физический сервер с запуском от 2 минут и&nbsp;бесплатной
+                    заменой комплектующих. Все его ресурсы — только ваши.
+                </h2>
+            </div>
+            <div class="module-buttons">
+    <a class="button large circle white" href="https://my.radiushost.ru/billmgr?func=register">
+        <div class="button-icons">
+            <img class="icon icon-01" src="/svg/more_g.svg">
+        </div>
+        <div class="button-text">В панель управления</div>
+    </a>
+    <div class="button large circle transparent widget-button">
+        <div class="button-icons">
+            <img class="icon icon-01" src="/svg/consult.svg">
+        </div>
+        <div class="button-text">Получить консультацию</div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div class="module animated">
+        <div class="module-center">
+            <div class="table catalogue">
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">RD-E5-48</div>
+                        <div class="status new">НОВИНКА</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">Intel® Xeon® Processor E5-2620 x 2 шт.</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">48 Gb (8Gb x 6 шт.)</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">240Gb SSD x 4 шт.</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">16 100</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                        </div>
+                        <div class="cell cart">
+                            <button class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">RD-E5-16-03</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">Intel® Xeon® Processor E5-2620 x 2 шт.</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">16 Gb (8Gb x 2 шт.)</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">1Tb SATA x 1 шт</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">8 500</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                        </div>
+                        <div class="cell cart">
+                            <button class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">RD-E3-8</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">Intel® Xeon® Processor E5-2620 x 2 шт.</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">8 GB</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">240Gb SSD x 2 шт.</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">6 500</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                        </div>
+                        <div class="cell cart">
+                            <button class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">RD-E3-4v2</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">Intel® Xeon® Processor E3-1240 v2</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">4 GB</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">1Tb SATA x 1 шт.</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">4 900</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                        </div>
+                        <div class="cell cart">
+                            <button class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">RD-E5-16-50</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">Intel® Xeon® Processor E5-2650 х 2шт.</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">16 GB</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">1Tb х 2шт.</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">12 000</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                        </div>
+                        <div class="cell cart">
+                            <button class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">RD-E3-16</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">Intel® Xeon® Processor E3-1240 х 2шт.</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">16 GB</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">1Tb х 2шт.</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">7 000</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                        </div>
+                        <div class="cell cart">
+                            <button class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">RD-E3-4</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">Intel® Xeon® Processor E3-1240</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">4 GB</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">1Tb х 1шт.</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">3 500</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                        </div>
+                        <div class="cell cart">
+                            <button class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">RD-E3-4-SSD</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">Intel® Xeon® Processor E3-1240</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">4 GB</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">60Gb SSD х 1шт</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">3 300</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                        </div>
+                        <div class="cell cart">
+                            <button class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="grid grid-wrap wrap-2">
+                <div class="box price large grey">
+                    <div class="box-title">Все тарифы включают:</div>
+                    <div class="box-text">
+                        <div class="arrows-list">
+                            <div class="row">
+                                <div class="row-icon">
+                                    <img class="icon"
+                                         src="/svg/more_b.svg">
+                                </div>
+                                <div class="row-text">Аренда физического сервера в&nbsp;одном из наших
+                                    дата-центров
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row-icon">
+                                    <img class="icon"
+                                         src="/svg/more_b.svg">
+                                </div>
+                                <div class="row-text">Установка операционной системы по&nbsp;выбору</div>
+                            </div>
+                            <div class="row">
+                                <div class="row-icon">
+                                    <img class="icon"
+                                         src="/svg/more_b.svg">
+                                </div>
+                                <div class="row-text">Подключение к&nbsp;порту Ethernet 100 Мбит/с</div>
+                            </div>
+                            <div class="row">
+                                <div class="row-icon">
+                                    <img class="icon"
+                                         src="/svg/more_b.svg">
+                                </div>
+                                <div class="row-text">Резервное питание.</div>
+                            </div>
+                            <div class="row">
+                                <div class="row-icon">
+                                    <img class="icon"
+                                         src="/svg/more_b.svg">
+                                </div>
+                                <div class="row-text">1 выделенный IP-адреса для&nbsp;каждого арендуемого
+                                    сервера.
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row-icon">
+                                    <img class="icon"
+                                         src="/svg/more_b.svg">
+                                </div>
+                                <div class="row-text">KVM-коммутатор по&nbsp;требованию.</div>
+                            </div>
+                            <div class="row">
+                                <div class="row-icon">
+                                    <img class="icon"
+                                         src="/svg/more_b.svg">
+                                </div>
+                                <div class="row-text">Подключение к&nbsp;резервному питанию.</div>
+                            </div>
+                            <div class="row">
+                                <div class="row-icon">
+                                    <img class="icon"
+                                         src="/svg/more_b.svg">
+                                </div>
+                                <div class="row-text">Трафик 1000 Гб (превалирующий)</div>
+                            </div>
+                            <div class="row">
+                                <div class="row-icon">
+                                    <img class="icon"
+                                         src="/svg/more_b.svg">
+                                </div>
+                                <div class="row-text">Круглосуточная техническая поддержка</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box price large consultation widget-button" style="background-color: #D4FFFF">
+    <div class="box-align">
+        <div class="box-title">Не нашли нужную конфигурацию?</div>
+        <div class="box-text">
+            Отправьте нам заявку с требуемыми параметрами сервера или опишите задачу
+            для&nbsp;которой предполагается использовать оборудование.
+        </div>
+    </div>
+    <div class="box-arrow">
+        <img class="icon" src="/svg/more_g.svg">
+    </div>
+    <div class="box-icon">
+        <img class="icon" src="/svg/price_consult.svg">
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="module-title">Преимущества</div>
+            <div class="slider mobile" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+    <div class="slider__wrapper">
+        <div class="slider__items grid grid-wrap wrap-2">
+            <div class="slider__item item-01 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Престижное расположение</div>
+                        <div class="box-text">
+                            Наш дата-центр находится по&nbsp;адресу Москва, ул. Вятская 27, стр 7,
+                            что обеспечивает легкий доступ для&nbsp;клиентов из любой точки города.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_location.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item item-02 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Бутиковый подход</div>
+                        <div class="box-text">
+                            Персонализированные решения, которые идеально соответствуют вашим
+                            уникальным требованиям, с&nbsp;учетом всех деталей и&nbsp;пожеланий.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_personal.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item item-03 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Высокий уровень безопасности</div>
+                        <div class="box-text">
+                            Современные системы защиты и&nbsp;резервирования, обеспечивающие
+                            непрерывную работу вашего бизнеса.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_security.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item item-04 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Круглосуточная поддержка</div>
+                        <div class="box-text">
+                            Наши специалисты всегда готовы оказать помощь,
+                            чтобы обеспечить бесперебойное функционирование ваших систем.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_support.svg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slider__btn slider__btn_prev slider__btn_hide">
+            <img class="icon active" src="/svg/scroll_left_k.svg">
+            <img class="icon blocked" src="/svg/scroll_left_g.svg">
+        </button>
+        <button class="slider__btn slider__btn_next">
+            <img class="icon active" src="/svg/scroll_right_k.svg">
+            <img class="icon blocked" src="/svg/scroll_right_g.svg">
+        </button>
+        <ol class="slider__indicators">
+            <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+            <li class="slider__indicator" data-slide-to="1"></li>
+            <li class="slider__indicator" data-slide-to="2"></li>
+            <li class="slider__indicator" data-slide-to="3"></li>
+        </ol>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="block-text">
+                <p>
+                    <b>Хостинг-компания Radistr предлагает услугу аренды выделенных серверов (Dedicated)</b>, которые размещены в
+                    собственном дата-центре. Если виртуального хостинга стало недостаточно для&nbsp;поставленных задач, то
+                    арендуя сервер, вы освобождаетесь от затрат на покупку собственного оборудования и&nbsp;программного
+                    обеспечения. Для&nbsp;удобства вы можете воспользоваться калькулятором для&nbsp;расчета стоимости различных
+                    конфигураций.
+                </p>
+                <p>
+                    Стандартные конфигурации арендуемых серверов при необходимости всегда можно изменить. Менеджеры компании
+                    Radistr предложат варианты с оптимальным соотношением цены и&nbsp;производительности.
+                </p>
+                <p>
+                    Мы используем готовые решения мировых лидеров IT-индустрии: IBM, Hewlett Packard, Cisco Systems,
+                    SuperMicro. Всё оборудование тестируется нашими специалистами перед запуском в&nbsp;работу.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        <div class="footer">
+    <div class="module arrow">
+        <div class="module-center">
+            <div class="module-bg">
+                <img class="image" src="/jpg/price_bg.jpg"/>
+            </div>
+            <div class="module-content">
+                <div class="module-title">Что делать?</div>
+                <div class="module-text">
+                    <div class="text text-30">Зарегистрируйтесь в&nbsp;панели управления</div>
+                    <div class="block-arrow">
+                        <img class="icon icon-todo" src="/svg/todo_sign-up.svg"/>
+                        <img class="icon icon-arrow" src="/svg/todo_arrow.svg"/>
+                    </div>
+                    <div class="text text-22">
+                        и&nbsp;уже через пару минут сможете арендовать сервер,
+                        развернуть базы данных или обеспечить быструю
+                        доставку контента.
+                    </div>
+                    <div class="buttons">
+                        <a class="button large circle white" href="https://my.radiushost.ru/billmgr?func=register" rel="nofollow" target="_blank">
+                            <div class="button-icons">
+                                <img class="icon icon-01" src="/svg/more_g.svg"/>
+                            </div>
+                            <div class="button-text">В панель управления</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module">
+        <div class="module-center">
+            <h2 class="module-title">Если остались вопросы</h2>
+            <div class="module-text">
+                Расскажите о&nbsp;вашей задаче.<br/>
+                Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение рабочего дня и&nbsp;подберем сервисы под проект.
+            </div>
+            <div class="module-buttons">
+                <button class="button primary circle blue widget-button">
+                    <div class="button-icons">
+                        <img class="icon icon-01" src="/svg/consult.svg"/>
+                    </div>
+                    <div class="button-text">Получить консультацию</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="module dark">
+        <div class="module-center">
+            <div class="grid">
+                <div class="column column-01 info">
+                    <h2 class="module-title">Нужна помощь?</h2>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="tel:+74956410412">
+                                <div class="link-icons">
+                                    <img class="icon icon-01" src="/svg/phone_g.svg"/>
+                                </div>
+                                <div class="link-text">Звоните <b>+7 (495) 641-04-12</b></div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="mailto:sales@radistr.ru">
+                                <div class="link-icons">
+                                    <img class="icon icon-01" src="/svg/email_g.svg"/>
+                                </div>
+                                <div class="link-text">Пишите <b>sales@radistr.ru</b></div>
+                            </a>
+                        </div>
+                        <div class="row">— изучим задачу и&nbsp;подберем<br/> подходящее решение.</div>
+                    </div>
+                    <div class="group">
+                        <div class="row">
+                            Если у&nbsp;вас проблема в&nbsp;работе услуг —<br/>
+                            <a class="link" href="https://my.radiushost.ru/billmgr#/?func=clientticket.edit" rel="nofollow" target="_blank"><b>создайте тикет</b></a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-02 nav">
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/about">О компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">История компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">Миссия и&nbsp;ценности</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">Команда</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">Сертификаты и&nbsp;награды</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/environment">Инфраструктура</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/features">Технические особенности</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/cooling">Системы охлаждения</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/power">Системы электропитания</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/security">Системы безопасности</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/rooms">Серверные комнаты</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/networking">Подключение к&nbsp;сетям</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-03 nav">
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/services">Услуги</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/rack">Аренда серверной стойки</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/colocation">Размещение серверов</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/dedicated">Аренда серверов</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/cloud">Облачные решения</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/network">Сетевые услуги</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/backup">Резервное копирование </a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/infosec">Информационная безопасность</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/price">Цены</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/rack">Аренда серверной стойки</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/colocation">Размещение сервера (colocation)</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/dedicated">Аренда сервера</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/vps">Виртуальные серверы (VDS/VPS)</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/storage">Хранение данных</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/support">Администрирование</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/ssl">Сертификаты (SSL)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-04 nav">
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/knowledge">База знаний</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/knowledge">Новости компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/knowledge">Статьи и&nbsp;исследования</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/clients">Клиентам</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/faq">Частые вопросы</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/documents">Документы и&nbsp;соглашения</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/company">Реквизиты компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/support">Поддержка</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="https://my.radiushost.ru/billmgr" target="_blank" rel="nofollow">Личный кабинет</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/contacts">Контакты</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/contacts">Контактная информация</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/contacts">Форма обратной связи</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/contacts">Схема проезда</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © ООО «Радистр», торговая марка "Radistr" — услуги виртуального хостинга и&nbsp;дата-центр<br/>
+                Лицензия на&nbsp;телематические услуги № 176267
+            </div>
+            <div class="policy">
+                <a class="link" href="/files/data-policy.pdf" target="_blank">
+                    Политика в&nbsp;отношении обработки персональных данных
+                </a>
+            </div>
+            <div class="logo">
+                <img class="icon icon-01" src="/svg/logo_footer.svg"/>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="popup-wrapper">
+        <div class="popup primary">
+            <div class="popup-close">
+                <img src="/svg/close_g.svg"/>
+                <img src="/svg/close_k.svg"/>
+            </div>
+            <div class="title"></div>
+            <form class="form" id="formId">
+                <div class="product"></div>
+                <label class="field input">
+                    <input type="text" required="">
+                    <span class="name">* Имя</span>
+                    <span class="error">Проверьте правильность заполнения поля</span>
+                </label>
+                <label class="field input">
+                    <input type="text" required="">
+                    <span class="name">* Эл. почта</span>
+                    <span class="error">Проверьте правильность заполнения поля</span>
+                </label>
+                <label class="field text">
+                    <textarea required=""></textarea>
+                    <span class="name">* Текст</span>
+                    <span class="error">Проверьте правильность заполнения поля</span>
+                </label>
+                <label class="field checkbox">
+                    <input type="checkbox">
+                    <span class="icons">
+                        <img class="icon one" src="/svg/checkbox.svg"/>
+                        <img class="icon two" src="/svg/checkbox_on.svg"/>
+                    </span>
+                    <span class="text">
+                        Подтверждаю согласие с политикой обработки персональных данных
+                    </span>
+                </label>
+                <button class="button circle primary blue" type="submit">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        (function(d,t) {
+            var BASE_URL="https://app.chatwoot.com";
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=BASE_URL+"/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g,s);
+            g.onload=function(){
+                window.chatwootSDK.run({
+                    websiteToken: 'BibD7GuVPKX9U4qGntQfXu15',
+                    baseUrl: BASE_URL
+                })
+            }
+        })(document,"script");
+    </script>
+    <script async src="/js/index.js"></script>
+    <script async src="/js/slider-swiper.js"></script>
+</body>
+</html>

@@ -5,6 +5,15 @@ const button = form.querySelector('.button');
 const formError = form.querySelector('.buttons .error');
 const formMessage = form.querySelector('.buttons .message');
 
+const carts = document.querySelectorAll('.cart-button');
+console.log(carts)
+carts.forEach(item=>{
+    item.addEventListener('click', (e)=>{
+        console.log(e.currentTarget)
+        const id = e.currentTarget;
+    })
+})
+
 // Функция для проверки валидности поля
 function validateField(input) {
     const field = input.closest('.field');
@@ -58,21 +67,29 @@ form.addEventListener('submit', (event) => {
     // Проверяем, все ли поля валидны
     if (validateForm()) {
         // Отправка формы
-        const data = new FormData(document.getElementById('formId'));
+        const form  = document.getElementById('formId')
+        const data = new FormData(form);
 	    console.log('--- new>', data)
-
+        const sending = document.getElementById('sendingId')
+        const sended = document.getElementById('sendedId')
+        form.style.display = 'none'
+        sending.style.display = 'block'
        fetch('/mail', 
 		{
             method: 'POST',  
             body: data
         })
-        .then(response => {
-			if(response.json().captcha){
+        .then(response=> {return response.json()}).then(res=>{
+            console.log('res>', res)
+			if(res.captcha){
 				
 				alert('Форма успешно отправлена!');
-
+                sending.style.display = 'none'
+                sended.style.display = 'block'
 			}else {
-                alert('Вы бот')
+                form.style.display = 'block'
+                alert('Подтвердите что вы не робот')
+                  form.style.display = 'block'
             }
             // Обработка ответа сервера
      

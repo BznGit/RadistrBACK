@@ -1,0 +1,1292 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon_16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/favicon/favicon_24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon_48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon_64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon_96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon/favicon_128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="/favicon/favicon_256.png">
+
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+
+    
+<meta name="description"
+      content="На виртуальном сервере возможно добавлять и изменять любые файлы в корневых директориях и устанавливать необходимые для работы сайта системные модули">
+<meta name="keywords"
+      content="На виртуальном сервере возможно добавлять и изменять любые файлы в корневых директориях и устанавливать необходимые для работы сайта системные модули">
+
+
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Виртуальные серверы (VDS/VPS) - Radistr</title>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header sub-menu ">
+    <div class="center">
+        <div class="logo">
+            <a class="logo-link" href="/">
+                <img class="logo-icon" src="/svg/logo.svg"/>
+            </a>
+        </div>
+        <button class="button mobile" id="menu-button">
+            <span class="line line-01"></span>
+            <span class="line line-02"></span>
+            <span class="line line-03"></span>
+        </button>
+        <div class="menu" id="primary-menu">
+    <div class="menu-group">
+        <div class="menu-item ">
+            <a class="item-link" href="/about">
+                <div class="link-text">О компании</div>
+            </a>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/services">
+                <div class="link-text">Услуги</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title">
+                    <a class="item-link" href="/services">Услуги компании Radistr</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/rack">Аренда серверной стойки</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/colocation">Размещение серверов</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/dedicated">Аренда серверов</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/cloud">Облачные решения</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/network">Сетевые услуги</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/backup">Резервное копирование <span class="mobile-hide">и&nbsp;восстановление данных</span> </a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/infosec">
+                        <span class="mobile-hide">Информационная безопасность</span>
+                        <span class="desktop-hide">Инфо-безопасность</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/environment">
+                <div class="link-text">Инфраструктура</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title">
+                    <a class="item-link" href="/environment">Инфраструктура компании Radistr</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/features">Технические особенности</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/cooling">Системы охлаждения</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/power">Системы электропитания</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/security">Системы безопасности</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/rooms">Серверные комнаты</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/networking">Подключение к&nbsp;сетям</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-group">
+        <div class="menu-item  checked ">
+            <a class="item-link" href="/price">
+                <div class="link-text">Цены</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title  checked ">
+                    <a class="item-link" href="/price">Цены компании Radistr</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/rack">Аренда серверной стойки</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/colocation">Размещение сервера <span class="mobile-hide">(colocation)</span></a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/dedicated">Аренда сервера</a>
+                </div>
+                <div class="sub-menu-item  checked ">
+                    <a class="item-link" href="/price/vps">Виртуальные серверы <span class="mobile-hide">(VDS/VPS)</span></a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/storage">Хранение данных</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/support">Администрирование</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/ssl">Сертификаты <span class="mobile-hide">(SSL)</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/clients">
+                <div class="link-text">Клиентам</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title ">
+                    <a class="item-link" href="/clients">Клиентам</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/faq">
+                        <span class="mobile-hide">Часто задаваемые вопросы</span>
+                        <span class="desktop-hide">Частые вопросы</span>
+                    </a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/documents">Документы и&nbsp;соглашения</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/company">Реквизиты компании</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/support">Поддержка</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="https://my.radiushost.ru/billmgr" target="_blank" rel="nofollow">Личный кабинет</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/knowledge">
+                <div class="link-text">База знаний</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title ">
+                    <a class="item-link" href="/knowledge">База знаний</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/knowledge">Статьи и&nbsp;исследования</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/knowledge">Бизнес-кейсы</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a class="item-link" href="/contacts">
+                <div class="link-text">Контакты</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+        <div class="phone">
+            <a class="link" href="tel:+74956410412">
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/phone.svg"/>
+                </div>
+                <div class="link-text">+7 (495) 641-04-12</div>
+            </a>
+        </div>
+        <div class="login">
+            <a class="link" href="https://my.radiushost.ru/billmgr" rel="nofollow" target="_blank">
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/sign-in.svg"/>
+                </div>
+                <div class="link-text">Вход</div>
+            </a>
+        </div>
+        <a class="button primary circle white" href="https://my.radiushost.ru/billmgr?func=register" rel="nofollow" target="_blank">
+            <div class="button-icons">
+                <img class="icon icon-01" src="/svg/sign-up.svg"/>
+            </div>
+            <div class="button-text">Регистрация</div>
+        </a>
+    </div>
+    <div class="desktop-menu">
+        <div class="blur">
+            <div class="background">
+                <div class="center">
+                    <div class="sub-menu-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<div class="main content">
+    <div class="module page-banner animated">
+        <div class="module-center">
+            <div class="block-nav">
+                <a class="link" href="/price">
+                    <img class="icon" src="/svg/back_w.svg"/>
+                    <div class="text">Цены</div>
+                </a>
+            </div>
+            <div class="page-image rent">
+                <img class="image" src="/svg/price_vps.svg">
+            </div>
+            <div class="block-text">
+                <h1 class="title-1">
+                    <span class="title-text">
+                        Виртуальные серверы<br/> (VDS/VPS)
+                    </span>
+                </h1>
+                <h2 class="title-2">
+                    На виртуальном сервере возможно добавлять и&nbsp;изменять любые файлы в&nbsp;корневых
+                    директориях и&nbsp;устанавливать необходимые для&nbsp;работы сайта системные модули.
+                </h2>
+            </div>
+            <div class="module-buttons">
+    <a class="button large circle white" href="https://my.radiushost.ru/billmgr?func=register">
+        <div class="button-icons">
+            <img class="icon icon-01" src="/svg/more_g.svg">
+        </div>
+        <div class="button-text">В панель управления</div>
+    </a>
+    <div class="button large circle transparent widget-button">
+        <div class="button-icons">
+            <img class="icon icon-01" src="/svg/consult.svg">
+        </div>
+        <div class="button-text">Получить консультацию</div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="module-title">
+                <div class="title">VDS на Linux</div>
+                <img class="icon" src="/svg/price_vps_linux.svg">
+            </div>
+            <div class="table catalogue vds">
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">KVM-1024</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">1 x 2,0 ГГц</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">1024 Мб</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">15 GB</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell ip">
+                            <div class="text large">1</div>
+                            <div class="text small">IP адрес</div>
+                        </div>
+                        <div class="cell speed">
+                            <div class="text large">до 30 Мбит/с</div>
+                            <div class="text small">Скорость</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text grey">310</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;месяц</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">270</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;год</div>
+                        </div>
+                        <div class="cell cart">
+                            <button id="KVM-1024" class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">KVM-2048</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">1 x 2,0 ГГц</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">2048 Мб</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">30 GB</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell ip">
+                            <div class="text large">1</div>
+                            <div class="text small">IP адрес</div>
+                        </div>
+                        <div class="cell speed">
+                            <div class="text large">до 40 Мбит/с</div>
+                            <div class="text small">Скорость</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text grey">590</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;месяц</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">510</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;год</div>
+                        </div>
+                        <div class="cell cart">
+                            <button id="KVM-1028" class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">KVM-4096</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">2 x 2,0 ГГц</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">4096 Мб</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">70 GB</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell ip">
+                            <div class="text large">1</div>
+                            <div class="text small">IP адрес</div>
+                        </div>
+                        <div class="cell speed">
+                            <div class="text large">до 60 Мбит/с</div>
+                            <div class="text small">Скорость</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text grey">1 650</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;месяц</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">1 490</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;год</div>
+                        </div>
+                        <div class="cell cart">
+                            <button id="KVM-4096" class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">KVM-8192</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">3 x 2,0 ГГц</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">8192 Мб</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">100 GB</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell ip">
+                            <div class="text large">1</div>
+                            <div class="text small">IP адрес</div>
+                        </div>
+                        <div class="cell speed">
+                            <div class="text large">до 80 Мбит/с</div>
+                            <div class="text small">Скорость</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text grey">3 200</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;месяц</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">2 990</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;год</div>
+                        </div>
+                        <div class="cell cart">
+                            <button id="KVM-8192" class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="module-title">
+                <div class="title">VDS на Windows</div>
+                <img class="icon" src="/svg/price_vps_windows.svg">
+            </div>
+            <div class="table catalogue vds">
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">KVM-2048</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">1 x 2,0 ГГц</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">2048 Мб</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">30 GB</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell ip">
+                            <div class="text large">1</div>
+                            <div class="text small">IP адрес</div>
+                        </div>
+                        <div class="cell speed">
+                            <div class="text large">Безлимитный</div>
+                            <div class="text small">Траффик</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text grey">590</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;месяц</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">510</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;год</div>
+                        </div>
+                        <div class="cell cart">
+                            <button id="KVM-2048W"class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">KVM-4096</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">2 x 2,0 ГГц</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">4096 Мб</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">70 GB</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell ip">
+                            <div class="text large">1</div>
+                            <div class="text small">IP адрес</div>
+                        </div>
+                        <div class="cell speed">
+                            <div class="text large">Безлимитный</div>
+                            <div class="text small">Траффик</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text grey">1 650</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;месяц</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">1 490</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;год</div>
+                        </div>
+                        <div class="cell cart">
+                            <button id="KVM-4096W" class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="row-title">
+                        <div class="name">KVM-8192</div>
+                    </div>
+                    <div class="row-content">
+                        <div class="cell processor">
+                            <div class="text large">3 x 2,0 ГГц</div>
+                            <div class="text small">Процессор</div>
+                        </div>
+                        <div class="cell memory">
+                            <div class="text large">8192 Мб</div>
+                            <div class="text small">Память</div>
+                        </div>
+                        <div class="cell disk">
+                            <div class="text large">100 GB</div>
+                            <div class="text small">Диск</div>
+                        </div>
+                        <div class="cell ip">
+                            <div class="text large">1</div>
+                            <div class="text small">IP адрес</div>
+                        </div>
+                        <div class="cell speed">
+                            <div class="text large">Безлимитный</div>
+                            <div class="text small">Траффик</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text grey">3 200</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;месяц</div>
+                        </div>
+                        <div class="cell price">
+                            <div class="price">
+                                <div class="text blue">2 990</div>
+                                <div class="text period">руб./мес</div>
+                            </div>
+                            <div class="text small">При оплате за&nbsp;год</div>
+                        </div>
+                        <div class="cell cart">
+                            <button id="KVM-8192W" class="button primary circle blue cart-button">
+                                <div class="button-icons">
+                                    <img class="icon icon-01" src="/svg/cart.svg">
+                                </div>
+                                <div class="button-text">Заказать</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="grid grid-wrap wrap-2">
+                <div class="box price large">
+                    <div class="box-title">Дополнительные опции</div>
+                    <div class="box-table">
+                        <div class="table justify">
+                            <div class="table-row">
+                                <div class="table-cell">1 Гб дополнительного дискового пространства</div>
+                                <div class="table-cell"><span class="blue">6</span> руб./мес</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">Дополнительное ядро процессора 2000 Гц</div>
+                                <div class="table-cell"><span class="blue">250</span> руб./мес</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">1024 Мб дополнительной оперативной памяти</div>
+                                <div class="table-cell"><span class="blue">270</span> руб./мес</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">Разовая услуга администрирования</div>
+                                <div class="table-cell"><span class="blue">1 200</span> руб./час</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">Услуга администрирования сервера</div>
+                                <div class="table-cell"><span class="blue">4 000</span> руб./мес</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">Аренда Microsoft® Windows® Server Standart 1<br/>
+                                    лиц. на 2 ядра
+                                </div>
+                                <div class="table-cell"><span class="blue">675</span> руб./мес</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box price large consultation widget-button" style="background-color: #D4FFFF">
+    <div class="box-align">
+        <div class="box-title">Не нашли нужную конфигурацию?</div>
+        <div class="box-text">
+            Отправьте нам заявку с требуемыми параметрами сервера или опишите задачу
+            для&nbsp;которой предполагается использовать оборудование.
+        </div>
+    </div>
+    <div class="box-arrow">
+        <img class="icon" src="/svg/more_g.svg">
+    </div>
+    <div class="box-icon">
+        <img class="icon" src="/svg/price_consult.svg">
+    </div>
+</div>
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Серверы в&nbsp;России</div>
+                        <div class="box-text">
+                            Физические серверы с VPS расположены в&nbsp;центре Москвы, в&nbsp;нашем собственном
+                            дата-центре.
+                            VDS размещаются на современных производительных платформах Hewlett Packard и
+                            SuperMicro.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_moscow.svg">
+                    </div>
+                </div>
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Бесплатный бэкап</div>
+                        <div class="box-text">
+                            На всех тарифах VPS хостинга в&nbsp;стоимость включен бесплатное
+                            резервное копирование данных на внешнее хранилище.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon"
+                             src="/svg/services_backup2.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="module-title">Частые вопросы</div>
+            <div class="box hide-box">
+                <input class="hide-input" type="checkbox" name="hide-box" id="hide-box-1">
+                <label class="hide-label" for="hide-box-1">
+                    <span class="name">Как часто создаются снапшоты или бэкапы моего VDS?</span>
+                    <img class="icon plus" src="/svg/why_plus.svg">
+                    <img class="icon minus" src="/svg/why_minus.svg">
+                </label>
+                <div class="hide-content">
+                    <div class="block-text">
+                        <p>
+                            Для VDS мы делаем сами технические бэкапы, которые создаются без остановки виртуальной
+                            машины. Эти бэкапы делаются ежедневно ночью, после 0 часов по московскому времени. Хранятся
+                            такие бэкапы за последние несколько суток, также по одному за последние несколько недель.
+                            Данные бэкапы предназначены, прежде всего, для аварийного восстановления VDS в случае сбоя
+                            на нашем оборудовании. Пользователь также сам может установить внутри операционной системы
+                            на VDS любое ПО для резервного копирования и создавать свои собственные бэкапы, в том числе
+                            на внешние хранилища. Для внешнего хранения бэкапов пользователя можно использовать и нашу
+                            услугу «FTP-хранилище».
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box hide-box">
+                <input class="hide-input" type="checkbox" name="hide-box" id="hide-box-2">
+                <label class="hide-label" for="hide-box-2">
+                    <span class="name">Что такое «виртуальная машина 1С-Битрикс» или «BitrixVM» и как этим воспользоваться на VDS?</span>
+                    <img class="icon plus" src="/svg/why_plus.svg">
+                    <img class="icon minus" src="/svg/why_minus.svg">
+                </label>
+                <div class="hide-content">
+                    <div class="block-text">
+                        <p>
+                            Виртуальная машина Bitrix — это операционная система CentOS c уже развёрнутым и настроенным
+                            веб-окружением с набором необходимых компонентов для корректной работы проектов,
+                            разработанных с использованием CMS 1С-Битрикс. Готовый образ такой виртуальной машины мы не
+                            предоставляем, но такое же окружение можно получить из минимальной установки VDS CentOS с
+                            помощью скрипта установки вэб-окружения, который можно скачать на сайтах 1С.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box hide-box">
+                <input class="hide-input" type="checkbox" name="hide-box" id="hide-box-3">
+                <label class="hide-label" for="hide-box-3">
+                    <span class="name">Как установить ISPmanager на VDS?</span>
+                    <img class="icon plus" src="/svg/why_plus.svg">
+                    <img class="icon minus" src="/svg/why_minus.svg">
+                </label>
+                <div class="hide-content">
+                    <div class="block-text">
+                        <p>
+                            Сразу после первичного развёртывания или переустановки ОС можно установить ISPmanager с
+                            помощью полученного у производителя панели скрипта по инструкции. Для установки данной
+                            панели пригодны VDS с операционными системами Debian 11 и 12, Ubuntu 20.04.Также не забудьте
+                            заранее приобрести лицензию через обращение в техподдержку.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box hide-box">
+                <input class="hide-input" type="checkbox" name="hide-box" id="hide-box-4">
+                <label class="hide-label" for="hide-box-4">
+                    <span class="name">Как подключиться по SSH и SFTP к VDS?</span>
+                    <img class="icon plus" src="/svg/why_plus.svg">
+                    <img class="icon minus" src="/svg/why_minus.svg">
+                </label>
+                <div class="hide-content">
+                    <div class="block-text">
+                        <p>
+                            SSH сервер уже установлен по всех операционных системах на базе Linux и FreeBSD. Для
+                            подключения к консоли VDS по SSH используйте командно-строчный клиент openssh (присутствует
+                            в любых дистрибутивах Linux и современных версиях Windows) или графический клиент putty для
+                            Windows. Для подключения по SFTP используется тот же SSH сервер и не требуется
+                            дополнительное ПО, но кроме вышеуказанных клиентов Вы можете использовать более удобные для
+                            работы с файлами графический клиент Filezilla (доступен и для Linux и для Windows).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box hide-box">
+                <input class="hide-input" type="checkbox" name="hide-box" id="hide-box-5">
+                <label class="hide-label" for="hide-box-5">
+                    <span class="name">Возможно ли обновить версию ОС Ubuntu без переустановки системы?</span>
+                    <img class="icon plus" src="/svg/why_plus.svg">
+                    <img class="icon minus" src="/svg/why_minus.svg">
+                </label>
+                <div class="hide-content">
+                    <div class="block-text">
+                        <p>
+                            Да, можно обновить ОС средствами операционной системы без переустановки ОС. Это можно
+                            сделать с помощью встроенного в ОС менеджера пакетов, не выполняя переустановку ОС.
+                            Процедура обновления подробно описана на официальном сайте операционной системы. Данные на
+                            сервере при этом будут сохранены, но всегда лучше сделать резервную копию и скачать её перед
+                            такой процедурой.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box hide-box">
+                <input class="hide-input" type="checkbox" name="hide-box" id="hide-box-6">
+                <label class="hide-label" for="hide-box-6">
+                    <span class="name">Как подключиться по FTP к VDS?</span>
+                    <img class="icon plus" src="/svg/why_plus.svg">
+                    <img class="icon minus" src="/svg/why_minus.svg">
+                </label>
+                <div class="hide-content">
+                    <div class="block-text">
+                        <p>
+                            Для работы с FTP необходимо установить на VDS программное обеспечение (ПО) FTP-сервера и
+                            настроить его. Сразу после первичной установки операционной системы FTP-сервера там нет.
+                            Более простым вариантом является использование панелей управления – например платной
+                            ISPmanager или бесплатной HestiaCP. После их установки можно получить возможность с их
+                            помощью настроить FTP-сервер без использования командной строки, как и другое серверное ПО.
+                            Для последующего подключения используйте любой FTP-клиент например Filezilla (доступен для
+                            Linux и Windows).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="module-title">Преимущества</div>
+            <div class="slider mobile" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+    <div class="slider__wrapper">
+        <div class="slider__items grid grid-wrap wrap-2">
+            <div class="slider__item item-01 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Престижное расположение</div>
+                        <div class="box-text">
+                            Наш дата-центр находится по&nbsp;адресу Москва, ул. Вятская 27, стр 7,
+                            что обеспечивает легкий доступ для&nbsp;клиентов из любой точки города.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_location.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item item-02 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Бутиковый подход</div>
+                        <div class="box-text">
+                            Персонализированные решения, которые идеально соответствуют вашим
+                            уникальным требованиям, с&nbsp;учетом всех деталей и&nbsp;пожеланий.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_personal.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item item-03 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Высокий уровень безопасности</div>
+                        <div class="box-text">
+                            Современные системы защиты и&nbsp;резервирования, обеспечивающие
+                            непрерывную работу вашего бизнеса.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_security.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item item-04 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Круглосуточная поддержка</div>
+                        <div class="box-text">
+                            Наши специалисты всегда готовы оказать помощь,
+                            чтобы обеспечить бесперебойное функционирование ваших систем.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_support.svg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slider__btn slider__btn_prev slider__btn_hide">
+            <img class="icon active" src="/svg/scroll_left_k.svg">
+            <img class="icon blocked" src="/svg/scroll_left_g.svg">
+        </button>
+        <button class="slider__btn slider__btn_next">
+            <img class="icon active" src="/svg/scroll_right_k.svg">
+            <img class="icon blocked" src="/svg/scroll_right_g.svg">
+        </button>
+        <ol class="slider__indicators">
+            <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+            <li class="slider__indicator" data-slide-to="1"></li>
+            <li class="slider__indicator" data-slide-to="2"></li>
+            <li class="slider__indicator" data-slide-to="3"></li>
+        </ol>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="block-text">
+                <p>
+                    <b>Недорогой VPS на Windows</b><br/>
+                    Купив VPS на Windows вам нет необходимости приобретать физический сервер, отдельно подбирать
+                    лицензии
+                    операционной системы Windows, производить установку и&nbsp;настройку системы. Мы предоставляем вам
+                    готовую
+                    услугу – виртуальный сервер, на котором уже установлена необходимая операционная система для&nbsp;управления,
+                    которым необходим лишь доступ в&nbsp;интернет.
+                </p>
+                <p>
+                    <b>От VDS Windows хостинга до&nbsp;удаленной рабочей станции</b><br/>
+                    На VDS с операционной системой Windows вы можете размещать сайты, устанавливать популярные
+                    приложения и
+                    сервисы, организовывать удаленные рабочие места, разрабатывать программное обеспечение, торговать на
+                    бирже и&nbsp;многое другое!
+                </p>
+                <p>
+                    <b>Аренда VPS для&nbsp;1С</b><br/>
+                    Виртуальные серверы с операционной системой Windows являются идеальным решением для&nbsp;бухгалтерских
+                    программ 1С. Так позволяет экономить средства на покупке или аренде физических серверов, позволяет
+                    сотрудникам работать из любого места, где есть подключение к&nbsp;интернету. Вам не нужно следить за
+                    работоспособностью комплектующих на сервере, апгрейде оборудования, резервировании данных – все это
+                    мы
+                    делаем за&nbsp;Вас!
+                </p>
+                <p>
+                    <b>Аренда VDS для&nbsp;Форекс</b><br/>
+                    Преимущества использования VPS сервера для&nbsp;Форекс: высокая скорость передачи данных, не
+                    лимитированный
+                    объем трафика, резервирование каналов связи, бесперебойное электропитание. Операционная система
+                    Windows
+                    позволяет работать со всем необходимым программным обеспечением для&nbsp;торгов на бирже Форекс!
+                </p>
+                <p>
+                    <b>Почему VDS</b><br/>
+                    Данный хостинг делает дорогостоящее инженерное и&nbsp;серверное оборудование доступным без
+                    необходимости
+                    приобретения избыточного серверного пространства. Заказывая услугу vds, вы обеспечиваете стабильную
+                    работу своего сайта. В большинстве случаев пользователи хотят иметь хостинг VDS по&nbsp;следующим
+                    причинам:
+                </p>
+                <ul>
+                    <li>контроль (получить возможность использовать свои приложения);</li>
+                    <li>безопасность (чтобы иметь свое собственное серверное пространство);</li>
+                    <li>изоляция (чтобы предотвратить вероятность возникновения сбоев, связанных с хакерскими атаками,
+                        ошибками других пользователей и&nbsp;т.д.);
+                    </li>
+                    <li>потенциал для&nbsp;роста.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="footer">
+    <div class="module arrow">
+        <div class="module-center">
+            <div class="module-bg">
+                <img class="image" src="/jpg/price_bg.jpg"/>
+            </div>
+            <div class="module-content">
+                <div class="module-title">Что делать?</div>
+                <div class="module-text">
+                    <div class="text text-30">Зарегистрируйтесь в&nbsp;панели управления</div>
+                    <div class="block-arrow">
+                        <img class="icon icon-todo" src="/svg/todo_sign-up.svg"/>
+                        <img class="icon icon-arrow" src="/svg/todo_arrow.svg"/>
+                    </div>
+                    <div class="text text-22">
+                        и&nbsp;уже через пару минут сможете арендовать сервер,
+                        развернуть базы данных или обеспечить быструю
+                        доставку контента.
+                    </div>
+                    <div class="buttons">
+                        <a class="button large circle white" href="https://my.radiushost.ru/billmgr?func=register" rel="nofollow" target="_blank">
+                            <div class="button-icons">
+                                <img class="icon icon-01" src="/svg/more_g.svg"/>
+                            </div>
+                            <div class="button-text">В панель управления</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module">
+        <div class="module-center">
+            <h2 class="module-title">Если остались вопросы</h2>
+            <div class="module-text">
+                Расскажите о&nbsp;вашей задаче.<br/>
+                Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение рабочего дня и&nbsp;подберем сервисы под проект.
+            </div>
+            <div class="module-buttons">
+                <button class="button primary circle blue widget-button">
+                    <div class="button-icons">
+                        <img class="icon icon-01" src="/svg/consult.svg"/>
+                    </div>
+                    <div class="button-text">Получить консультацию</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="module dark">
+        <div class="module-center">
+            <div class="grid">
+                <div class="column column-01 info">
+                    <h2 class="module-title">Нужна помощь?</h2>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="tel:+74956410412">
+                                <div class="link-icons">
+                                    <img class="icon icon-01" src="/svg/phone_g.svg"/>
+                                </div>
+                                <div class="link-text">Звоните <b>+7 (495) 641-04-12</b></div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="mailto:sales@radistr.ru">
+                                <div class="link-icons">
+                                    <img class="icon icon-01" src="/svg/email_g.svg"/>
+                                </div>
+                                <div class="link-text">Пишите <b>sales@radistr.ru</b></div>
+                            </a>
+                        </div>
+                        <div class="row">— изучим задачу и&nbsp;подберем<br/> подходящее решение.</div>
+                    </div>
+                    <div class="group">
+                        <div class="row">
+                            Если у&nbsp;вас проблема в&nbsp;работе услуг —<br/>
+                            <a class="link" href="https://my.radiushost.ru/billmgr#/?func=clientticket.edit" rel="nofollow" target="_blank"><b>создайте тикет</b></a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-02 nav">
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/about">О компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">История компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">Миссия и&nbsp;ценности</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">Команда</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">Сертификаты и&nbsp;награды</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/environment">Инфраструктура</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/features">Технические особенности</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/cooling">Системы охлаждения</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/power">Системы электропитания</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/security">Системы безопасности</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/rooms">Серверные комнаты</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/networking">Подключение к&nbsp;сетям</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-03 nav">
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/services">Услуги</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/rack">Аренда серверной стойки</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/colocation">Размещение серверов</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/dedicated">Аренда серверов</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/cloud">Облачные решения</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/network">Сетевые услуги</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/backup">Резервное копирование </a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/infosec">Информационная безопасность</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/price">Цены</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/rack">Аренда серверной стойки</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/colocation">Размещение сервера (colocation)</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/dedicated">Аренда сервера</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/vps">Виртуальные серверы (VDS/VPS)</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/storage">Хранение данных</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/support">Администрирование</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/ssl">Сертификаты (SSL)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-04 nav">
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/knowledge">База знаний</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/knowledge">Новости компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/knowledge">Статьи и&nbsp;исследования</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/clients">Клиентам</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/faq">Частые вопросы</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/documents">Документы и&nbsp;соглашения</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/company">Реквизиты компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/support">Поддержка</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="https://my.radiushost.ru/billmgr" target="_blank" rel="nofollow">Личный кабинет</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/contacts">Контакты</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/contacts">Контактная информация</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/contacts">Форма обратной связи</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/contacts">Схема проезда</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © ООО «Радистр», торговая марка "Radistr" — услуги виртуального хостинга и&nbsp;дата-центр<br/>
+                Лицензия на&nbsp;телематические услуги № 176267
+            </div>
+            <div class="policy">
+                <a class="link" href="/files/data-policy.pdf" target="_blank">
+                    Политика в&nbsp;отношении обработки персональных данных
+                </a>
+            </div>
+            <div class="logo">
+                <img class="icon icon-01" src="/svg/logo_footer.svg"/>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="popup-wrapper">
+        <div class="popup primary">
+            <div class="popup-close">
+                <img src="/svg/close_g.svg"/>
+                <img src="/svg/close_k.svg"/>
+            </div>
+            <div class="title"></div>
+            <form class="form" id="formId">
+                <div class="product"></div>
+                <label class="field input">
+                    <input type="text" required="">
+                    <span class="name">* Имя</span>
+                    <span class="error">Проверьте правильность заполнения поля</span>
+                </label>
+                <label class="field input">
+                    <input type="text" required="">
+                    <span class="name">* Эл. почта</span>
+                    <span class="error">Проверьте правильность заполнения поля</span>
+                </label>
+                <label class="field text">
+                    <textarea required=""></textarea>
+                    <span class="name">* Текст</span>
+                    <span class="error">Проверьте правильность заполнения поля</span>
+                </label>
+                <label class="field checkbox">
+                    <input type="checkbox">
+                    <span class="icons">
+                        <img class="icon one" src="/svg/checkbox.svg"/>
+                        <img class="icon two" src="/svg/checkbox_on.svg"/>
+                    </span>
+                    <span class="text">
+                        Подтверждаю согласие с политикой обработки персональных данных
+                    </span>
+                </label>
+                <button class="button circle primary blue" type="submit">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        (function(d,t) {
+            var BASE_URL="https://app.chatwoot.com";
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=BASE_URL+"/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g,s);
+            g.onload=function(){
+                window.chatwootSDK.run({
+                    websiteToken: 'BibD7GuVPKX9U4qGntQfXu15',
+                    baseUrl: BASE_URL
+                })
+            }
+        })(document,"script");
+    </script>
+    <script async src="/js/index.js"></script>
+    <script async src="/js/slider-swiper.js"></script>
+    <script async src="/js/smail.js"></script>
+</body>
+</html>

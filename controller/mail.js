@@ -20,21 +20,17 @@ async function sendMail(req, res) {
           smtpTransport = nodemailer.createTransport({
             host: '127.0.0.1',
             port: process.env.SMPTPORT,
-           /* secure: false,
-            auth: {
-              user: process.env.USER,
-              pass: process.env.PASS
-            }*/
+
           });
         } catch (e) {
           return console.log('Error: ' + e.name + ":" + e.message);
         }
       
         let mailOptions = {
-          from: 'no-reply@openmining.org', // sender address
-          to: [ /*'info@openmining.org',*/'bznkvlx@yandex.ru' ], // list of receivers
-          subject: 'Обращение с сайта Radistr.ru', // Subject line
-          text: 'Обращение с сайта Radistr.ru', // plain text body
+          from: 'no-reply@radistr.ru', // sender address
+          to: [ /*'sales@radistr.ru'*/, 'bznkvlx@yandex.ru' ], // list of receivers
+          subject: 'Форма обратной связи', // Subject line
+          text: 'Форма обратной связи', // plain text body
           html: `<div>Почта: ${email}</div>
                 <div>Имя: ${user}<div>
                 <div>Сообщение: ${text}<div>` // html body
