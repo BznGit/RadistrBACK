@@ -59,11 +59,11 @@ form.addEventListener('submit', (event) => {
     if (validateForm()) {
         // Отправка формы
         const data = new FormData(document.getElementById('formId'));
-	    console.log('---', data)
+	    console.log('--- new>', data)
 
        fetch('/mail', 
 		{
-            method: 'POST',           
+            method: 'POST',  
             body: data
         })
         .then(response => {

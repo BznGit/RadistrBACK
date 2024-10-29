@@ -12,7 +12,7 @@ async function sendMail(req, res) {
 
   console.log('>', resCaptcha)
   console.log(resCaptcha.success)
-  if(true){
+  if(resCaptcha.success){
     try {
         let smtpTransport;
         console.log(process.env.SMPTPORT)
@@ -20,8 +20,8 @@ async function sendMail(req, res) {
           smtpTransport = nodemailer.createTransport({
             host: '127.0.0.1',
             port: process.env.SMPTPORT,
-            secure: true,
-            /*auth: {
+           /* secure: false,
+            auth: {
               user: process.env.USER,
               pass: process.env.PASS
             }*/
