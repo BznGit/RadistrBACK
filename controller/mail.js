@@ -5,31 +5,26 @@ require('dotenv').config();
 
 async function sendMail(req, res) {
 
-  console.log('mail=>',req.fields)
- const { email, user, text, 'g-recaptcha-response': captcha } = req.fields
- console.log('>',captcha)
- let resCatcha = '';
-switch(captcha){
-    case process.env.PUBLIC_KEY: resCatcha = await api.getCaptcha(captcha); // openmining
-  break;
-    case process.env.PUBLIC_KEY2: resCatcha = await api.getCaptcha2(captcha);// radistr
-  break;
-}
- 
- console.log(resCatcha.success)
- if(resCatcha.success){
+  console.log('mail=>', req.fields)
+  const { email, user, text, 'g-recaptcha-response': captcha } = req.fields
+
+ const resCaptcha = await api.getCaptcha(captcha);  
+
+  console.log('>', resCaptcha)
+  console.log(resCaptcha.success)
+  if(true){
     try {
         let smtpTransport;
-  
+        console.log(process.env.SMPTPORT)
         try {
           smtpTransport = nodemailer.createTransport({
-            host: 'p3plzcpnl503556.prod.phx3.secureserver.net',
+            host: '127.0.0.1',
             port: process.env.SMPTPORT,
             secure: true,
-            auth: {
+            /*auth: {
               user: process.env.USER,
               pass: process.env.PASS
-            }
+            }*/
           });
         } catch (e) {
           return console.log('Error: ' + e.name + ":" + e.message);
@@ -37,9 +32,9 @@ switch(captcha){
       
         let mailOptions = {
           from: 'no-reply@openmining.org', // sender address
-          to: [ 'info@openmining.org','bznkvlx@yandex.ru' ], // list of receivers
-          subject: 'Обращение с сайта openmining.org', // Subject line
-          text: 'Обращение с сайта openmining.org', // plain text body
+          to: [ /*'info@openmining.org',*/'bznkvlx@yandex.ru' ], // list of receivers
+          subject: 'Обращение с сайта Radistr.ru', // Subject line
+          text: 'Обращение с сайта Radistr.ru', // plain text body
           html: `<div>Почта: ${email}</div>
                 <div>Имя: ${user}<div>
                 <div>Сообщение: ${text}<div>` // html body
@@ -65,7 +60,6 @@ switch(captcha){
     }
   } else{
     console.log('bot')
-  
     res.status(401).json({captcha: false});
     res.send()
   }
