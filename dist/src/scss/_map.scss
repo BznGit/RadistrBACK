@@ -1,0 +1,74 @@
+.block-map {
+  margin-bottom: var(--interval-60);
+  margin-top: var(--interval-20);
+  align-items: flex-start;
+  display: flex;
+  .map {
+    margin-right: var(--interval-20);
+    border-radius: var(--interval-15);
+    position: relative;
+    overflow: hidden;
+    padding-top: 35%;
+    width: 49%;
+    iframe {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+  .info {
+    width: 38%;
+    .item {
+      margin-bottom: var(--interval-30);
+      align-items: flex-start;
+      display: flex;
+      .item-icon {
+        width: var(--interval-30);
+        .icon {
+          display: block;
+          width: 100%;
+        }
+      }
+      .item-text {
+        padding-left: var(--interval-20);
+        width: calc(100% - var(--interval-30));
+        .title {
+          @include ProximaNova-Bold;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    flex-wrap: wrap;
+    .map {
+      padding-top: 50%;
+      width: 100%;
+    }
+    .info {
+      padding-top: 4vw;
+      column-gap: 4vw;
+      display: flex;
+      width: 100%;
+      .item {
+        flex: 1;
+      }
+    }
+  }
+  @media screen and (max-width: 640px) {
+    margin: 6vw 0;
+    .map {
+      padding-top: 100%;
+      margin-right: 0;
+    }
+    .info {
+      padding-top: 6vw;
+      flex-wrap: wrap;
+      .item {
+        width: 100%;
+        flex: none;
+      }
+    }
+  }
+}

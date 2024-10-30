@@ -1,0 +1,82 @@
+.button {
+  @include ProximaNova-Bold;
+  transition: all 350ms;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  .button-icons {
+    position: relative;
+    .icon {
+      transform: translate(-50%,-50%);
+      position: absolute;
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+    }
+  }
+  .button-text {
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+  &.white {
+    background: $white;
+    color: $blue;
+  }
+  &.blue {
+    background: $blue;
+    color: $white;
+  }
+  &.transparent {
+    border: 1px solid $white;
+    color: $white;
+  }
+  &.primary {
+    @include text-14;
+    min-height: 2.7em;
+    .button-icons {
+      height: 1.2em;
+      width: 1.6em;
+    }
+    .button-text {
+      padding-left: .6em;
+    }
+  }
+  &.large {
+    @include text-22;
+    min-height: 2.5em;
+    .button-icons {
+      height: 1em;
+      width: 1.5em;
+    }
+    .button-text {
+      padding-left: .5em;
+    }
+  }
+  &.circle {
+    border-radius: var(--interval-40);
+    padding: 0 var(--interval-25);
+  }
+  @media screen and (max-width: 640px) {
+    &.primary {
+      font-size: 3.5vw;
+      min-height: 2.7em;
+      .button-icons {
+        height: 1.2em;
+        width: 1.6em;
+      }
+      .button-text {
+        padding-left: .6em;
+      }
+    }
+    &.large {
+      font-size: 4vw;
+      &.white {
+        font-size: 4.4vw;
+      }
+    }
+  }
+}

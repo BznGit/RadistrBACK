@@ -1,0 +1,148 @@
+.footer {
+  .grid {
+    column-gap: 0;
+  }
+  .column {
+    &.info {
+      width: 37%;
+    }
+    &.nav {
+      width: 21%;
+    }
+  }
+  .row {
+    padding-bottom: var(--interval-5);
+    color: $white;
+    &.title {
+      padding-bottom: var(--interval-10);
+      .link {
+        color: $green;
+      }
+    }
+  }
+  .group {
+    padding-bottom: var(--interval-25);
+  }
+  .link {
+    color: $white;
+    .link-icons {
+      height: .9em;
+      width: 1.2em;
+    }
+    .link-text {
+      padding-left: .4em;
+      @include text-14;
+      color: $white;
+    }
+  }
+  .copyright {
+    padding-bottom: var(--interval-20);
+    @include text-14;
+    color: $white;
+    position: relative;
+    z-index: 2;
+  }
+  .policy {
+    position: relative;
+    z-index: 2;
+    @include text-14;
+    .link {
+      color: $green;
+    }
+  }
+  .logo {
+    margin: calc(var(--interval-30) * -1) auto 0;
+    overflow: hidden;
+    height: calc(var(--interval-30) * 10);
+    position: relative;
+    z-index: 1;
+    width: 82%;
+  }
+  @media screen and (max-width: 1024px) {
+    .grid {
+      margin-bottom: 1vw;
+    }
+    .column {
+      &.info {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        .module-title {
+          width: 30%;
+        }
+        .group {
+          width: 35%;
+          .row {
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+      &.nav {
+        display: none;
+      }
+    }
+    .logo {
+      margin: 0 auto;
+      height: 21vw;
+      width: 82%;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .grid {
+      margin-bottom: 1vw;
+    }
+    .column {
+      &.info {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        .module-title {
+          width: 100%;
+        }
+        .group {
+          width: 100%;
+          .row {
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+      &.nav {
+        display: none;
+      }
+    }
+    .row {
+      padding-bottom: 4vw;
+      &.title {
+        padding-bottom: 4vw;
+      }
+    }
+    .group {
+      padding-bottom: 0;
+    }
+    .link {
+      font-size: 4vw;
+      .link-text {
+        font-size: 4vw;
+      }
+    }
+    .copyright {
+      font-size: 3vw;
+    }
+    .policy {
+      .link {
+        font-size: 3vw;
+      }
+    }
+    .logo {
+      margin: 5vw 0 0;
+      height: 25vw;
+      width: 100%;
+    }
+  }
+}

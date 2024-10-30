@@ -1,0 +1,107 @@
+.page-image {
+	position: relative;
+	width: 100%;
+	.image {
+		top: var(--interval-40);
+		position: absolute;
+		right: 0;
+	}
+	&.about {
+		.image {
+			right: calc(var(--interval-95) * -1);
+			width: calc(var(--interval-100) * 4.15);
+		}
+	}
+	&.co-location {
+		.image {
+			width: calc(var(--interval-100) * 3.4);
+		}
+	}
+	&.rent {
+		.image {
+			width: calc(var(--interval-100) * 2.7);
+		}
+	}
+	&.rack {
+		.image {
+			width: calc(var(--interval-100) * 2.2);
+		}
+	}
+	&.cloud {
+		.image {
+			width: calc(var(--interval-100) * 3.4);
+		}
+	}
+	&.network {
+		.image {
+			width: calc(var(--interval-100) * 3);
+		}
+	}
+	&.backup {
+		.image {
+			width: calc(var(--interval-100) * 3.75);
+		}
+	}
+	&.security {
+		.image {
+			width: calc(var(--interval-100) * 3);
+		}
+	}
+	&.company {
+		.image {
+			width: calc(var(--interval-100) * 2.8);
+		}
+	}
+	&.docs {
+		.image {
+			width: calc(var(--interval-100) * 2.5);
+		}
+	}
+	&.faq {
+		.image {
+			width: calc(var(--interval-100) * 3.2);
+		}
+	}
+	@media screen and (max-width: 1024px) {
+		.image {
+			width: 25vw!important;
+			top: 0!important;
+			right: 0;
+		}
+		&.about {
+			.image {
+				right: 4vw;
+				width: 22vw !important;
+			}
+		}
+	}
+	@media screen and (max-width: 640px) {
+		.image {
+			width: 50vw!important;
+			margin: 0 auto 6vw;
+			max-height: 50vw;
+			position: static;
+			display: block;
+		}
+		&.about {
+			.image {
+				width: 50vw !important;
+			}
+		}
+	}
+}
+
+.page-banner {
+	.page-image {
+		.image {
+			transform: translateX(50%);
+		}
+	}
+	@media screen and (max-width: 1680px) {
+		.page-image {
+			.image {
+				transform: translateX(0);
+			}
+		}
+	}
+}

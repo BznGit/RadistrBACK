@@ -1,0 +1,24 @@
+.link {
+	transition: all 300ms;
+	display: inline-flex;
+	align-items: center;
+	color: $blue;
+	.link-icons {
+		position: relative;
+		.icon {
+			transform: translate(-50%,-50%);
+			position: absolute;
+			max-height: 100%;
+			max-width: 100%;
+			width: 100%;
+			left: 50%;
+			top: 50%;
+			&.icon-01 {
+
+			}
+		}
+	}
+	&:hover {
+		opacity: .5;
+	}
+}

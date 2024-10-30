@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon_16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/favicon/favicon_24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon_48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon_64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon_96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon/favicon_128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="/favicon/favicon_256.png">
+
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+
+    
+<meta name="description" content="В современном быстро развивающемся цифровом мире компании постоянно ищут эффективные способы управления и хранения данных">
+<meta name="keywords" content="В современном быстро развивающемся цифровом мире компании постоянно ищут эффективные способы управления и хранения данных">
+
+
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Облачное хранилище и услуга размещения сервера: что выбрать? - Radistr</title>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header sub-menu ">
+    <div class="center">
+        <div class="logo">
+            <a class="logo-link" href="/">
+                <img class="logo-icon" src="/svg/logo.svg"/>
+            </a>
+        </div>
+        <button class="button mobile" id="menu-button">
+            <span class="line line-01"></span>
+            <span class="line line-02"></span>
+            <span class="line line-03"></span>
+        </button>
+        <div class="menu" id="primary-menu">
+    <div class="menu-group">
+        <div class="menu-item ">
+            <a class="item-link" href="/about">
+                <div class="link-text">О компании</div>
+            </a>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/services">
+                <div class="link-text">Услуги</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title">
+                    <a class="item-link" href="/services">Услуги компании Radistr</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/rack">Аренда серверной стойки</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/colocation">Размещение серверов</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/dedicated">Аренда серверов</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/cloud">Облачные решения</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/network">Сетевые услуги</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/backup">Резервное копирование <span class="mobile-hide">и&nbsp;восстановление данных</span> </a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/services/infosec">
+                        <span class="mobile-hide">Информационная безопасность</span>
+                        <span class="desktop-hide">Инфо-безопасность</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/environment">
+                <div class="link-text">Инфраструктура</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title">
+                    <a class="item-link" href="/environment">Инфраструктура компании Radistr</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/features">Технические особенности</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/cooling">Системы охлаждения</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/power">Системы электропитания</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/security">Системы безопасности</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/rooms">Серверные комнаты</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/environment/networking">Подключение к&nbsp;сетям</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-group">
+        <div class="menu-item ">
+            <a class="item-link" href="/price">
+                <div class="link-text">Цены</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title ">
+                    <a class="item-link" href="/price">Цены компании Radistr</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/rack">Аренда серверной стойки</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/colocation">Размещение сервера <span class="mobile-hide">(colocation)</span></a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/dedicated">Аренда сервера</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/vps">Виртуальные серверы <span class="mobile-hide">(VDS/VPS)</span></a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/storage">Хранение данных</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/support">Администрирование</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/price/ssl">Сертификаты <span class="mobile-hide">(SSL)</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item ">
+            <a class="item-link" href="/clients">
+                <div class="link-text">Клиентам</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title ">
+                    <a class="item-link" href="/clients">Клиентам</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/faq">
+                        <span class="mobile-hide">Часто задаваемые вопросы</span>
+                        <span class="desktop-hide">Частые вопросы</span>
+                    </a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/documents">Документы и&nbsp;соглашения</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/company">Реквизиты компании</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/clients/support">Поддержка</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="https://my.radiushost.ru/billmgr" target="_blank" rel="nofollow">Личный кабинет</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item  checked ">
+            <a class="item-link" href="/knowledge">
+                <div class="link-text">База знаний</div>
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/menu_arrow.svg"/>
+                </div>
+            </a>
+            <div class="sub-menu">
+                <div class="sub-menu-item title  checked ">
+                    <a class="item-link" href="/knowledge">База знаний</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/knowledge">Статьи и&nbsp;исследования</a>
+                </div>
+                <div class="sub-menu-item ">
+                    <a class="item-link" href="/knowledge">Бизнес-кейсы</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a class="item-link" href="/contacts">
+                <div class="link-text">Контакты</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+        <div class="phone">
+            <a class="link" href="tel:+74956410412">
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/phone.svg"/>
+                </div>
+                <div class="link-text">+7 (495) 641-04-12</div>
+            </a>
+        </div>
+        <div class="login">
+            <a class="link" href="https://my.radiushost.ru/billmgr" rel="nofollow" target="_blank">
+                <div class="link-icons">
+                    <img class="icon icon-01" src="/svg/sign-in.svg"/>
+                </div>
+                <div class="link-text">Вход</div>
+            </a>
+        </div>
+        <a class="button primary circle white" href="https://my.radiushost.ru/billmgr?func=register" rel="nofollow" target="_blank">
+            <div class="button-icons">
+                <img class="icon icon-01" src="/svg/sign-up.svg"/>
+            </div>
+            <div class="button-text">Регистрация</div>
+        </a>
+    </div>
+    <div class="desktop-menu">
+        <div class="blur">
+            <div class="background">
+                <div class="center">
+                    <div class="sub-menu-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<div class="main content">
+    <div class="module page-inner animated">
+        <div class="module-center">
+            <div class="block-nav">
+                <a class="link" href="/knowledge">
+                    <img class="icon" src="/svg/back.svg"/>
+                    <div class="text">База знаний</div>
+                </a>
+            </div>
+            <div class="block-text">
+                <h1 class="title-1 full">
+                    <span class="title-text">
+                        Облачное хранилище и&nbsp;услуга размещения сервера: что выбрать?
+                    </span>
+                </h1>
+                <div class="block-banner">
+                    <div class="banner-image">
+                        <img class="image" src="/jpg/knowledge_cloud-vs-colocation_pic.jpg"/>
+                    </div>
+                </div>
+                <p class="intro">
+                    В современном быстро развивающемся цифровом мире компании постоянно ищут эффективные способы
+                    управления и&nbsp;хранения данных. Популярными решениями являются
+                    «<a href="/services/cloud">облачное хранилище</a>» и&nbsp;«<a href="/services/colocation">услуга колокейшн</a>» (colocation).
+                    На первый взгляд они похожи, но каждое из них имеет свои особенности для&nbsp;решения различных бизнес-задач.
+                    Понимание этих различий важно для&nbsp;принятия взвешенного решения по&nbsp;стратегии управления данными в&nbsp;компании.
+                </p>
+                <p>Современные компании ежедневно генерируют огромные объемы данных, что требует надежных решений для
+                    хранения. Выбор правильного метода хранения данных может существенно повлиять на эффективность и
+                    масштабируемость компании.</p>
+                <h2>Что такое &laquo;облачное хранение&raquo;?</h2>
+                <p>Под облачным хранением понимается хранение данных на удаленных серверах, доступ к&nbsp;которым
+                    осуществляется через сеть интернет. Вместо того чтобы хранить файлы на локальном жестком диске,
+                    компании размещают свои данные на серверах, обслуживаемых сторонними провайдерами. Этот метод имеет
+                    ряд преимуществ, включая легкий доступ из любого места, масштабируемость и&nbsp;сокращение потребностей в
+                    физической инфраструктуре.</p>
+                <h3>Ключевые особенности облачного хранения данных</h3>
+                <ul>
+                    <li><strong>Доступность:</strong> одной из главных особенностей облачных хранилищ является их
+                        доступность. Сотрудники могут получить доступ к&nbsp;данным из любого места, где есть подключение к
+                        интернету, что делает его идеальным для&nbsp;организаций с удаленной рабочей средой.
+                    </li>
+                    <li><strong>Масштабируемость:</strong> облачные хранилища позволяют компаниям быстро масштабировать
+                        свои потребности в&nbsp;хранении данных. Емкость хранилища увеличивается без необходимости
+                        модернизации физического оборудования.
+                    </li>
+                    <li><strong>Экономическая эффективность:</strong> облачное хранение данных экономически эффективно
+                        для&nbsp;малых и&nbsp;средних предприятий. Оно устраняет необходимость в&nbsp;значительных предварительных
+                        инвестициях в&nbsp;физическое оборудование, поскольку компании платят только за&nbsp;используемое
+                        хранилище.
+                    </li>
+                </ul>
+                <h3>Безопасность</h3>
+                <p>Несмотря на многочисленные преимущества облачного хранения данных, безопасность остается одной из
+                    главных его проблем. Поскольку данные хранятся на внешних серверах, компании должны полагаться на
+                    меры безопасности, принимаемые поставщиком облачных услуг. К ним относятся шифрование, регулярные
+                    аудиты безопасности и&nbsp;соблюдение правил защиты данных. Однако ответственность лежит также и&nbsp;на самой
+                    компании, особенно когда речь идет об управлении контролем доступа и&nbsp;защите учетных данных
+                    пользователей.</p>
+                <h2>Что такое &laquo;размещение сервера&raquo;?</h2>
+                <p>Услуга размещения сервера (<a href="/services/colocation">colocation</a>) предполагает, что компания арендует место в&nbsp;стороннем
+                    дата-центре для&nbsp;размещения своих собственных серверов и&nbsp;иного оборудования. В отличие от облачного
+                    хранилища, где данные хранятся на инфраструктуре провайдера, услуга colocation позволяет компаниям
+                    сохранять контроль над своим оборудованием, пользуясь при этом инфраструктурой центра обработки
+                    данных - такой как электропитание, охлаждение и&nbsp;безопасность.</p>
+                <h3>Ключевые особенности услуги colocation</h3>
+                <ul>
+                    <li><strong>Контроль:</strong> одним из главных преимуществ услуги колокейшн является уровень
+                        контроля. Предприятия сохраняют право собственности на свои серверы и&nbsp;могут настраивать их в
+                        соответствии со своими конкретными потребностями.
+                    </li>
+                    <li><strong>Надежность:</strong> объекты colocation спроектированы с учетом высокой доступности. Они
+                        предлагают резервные источники питания, передовые системы охлаждения и&nbsp;надежные меры
+                        безопасности, гарантирующие, что ваше оборудование будет защищено и&nbsp;работоспособно в&nbsp;любое
+                        время.
+                    </li>
+                    <li><strong>C</strong><strong>вязь:</strong> центры colocation часто предоставляют отличную сетевую
+                        связь, доступ к&nbsp;нескольким операторам и&nbsp;высокоскоростное интернет-соединение. Это очень важно
+                        для&nbsp;предприятий, которым требуется скоростной доступ к&nbsp;данным.
+                    </li>
+                </ul>
+                <h3>Безопасность</h3>
+                <p>Услуги colocation обеспечивают высокий уровень физической безопасности: контроль доступа, камеры
+                    наблюдения и&nbsp;персонал службы безопасности на объекте. Однако предприятия отвечают за&nbsp;безопасность
+                    своих серверов: управление программными исправлениями (патчами), настройка брандмауэров, обнаружение
+                    кибер-атак и&nbsp;взломов. Это означает, что, хотя физическая среда безопасна, ответственность за&nbsp;защиту
+                    данных от угроз лежит на компании.</p>
+                <h2>Сравнение услуг облачного хранения и&nbsp;размещения</h2>
+                <h3>Контроль и&nbsp;владение</h3>
+                <p><strong>Облачное хранение данных:</strong> при использовании облачных хранилищ предприятия теряют
+                    контроль над физической инфраструктурой. Облачный провайдер управляет серверами, устройствами
+                    хранения и&nbsp;сетевым оборудованием. Это может быть преимуществом для&nbsp;компаний, которые предпочитают
+                    сосредоточиться на своей основной деятельности, а не на управлении ИТ.</p>
+                <p><strong>Услуги колокейшн:</strong> colocation позволяет компаниям сохранять полный контроль над
+                    конфигурацией своего оборудования и&nbsp;программного обеспечения. Это идеальный вариант для&nbsp;компаний с
+                    особыми требованиями к&nbsp;соответствию стандартам или для&nbsp;тех, кому необходимо запускать
+                    пользовательские приложения, требующие определенных аппаратных настроек.</p>
+                <h3>Стоимость</h3>
+                <p><strong>Облачное хранилище:</strong> облачные хранилища часто работают по&nbsp;модели &laquo;оплата по
+                    факту&raquo;, что делает их более доступными для&nbsp;компаний с переменчивыми потребностями в&nbsp;хранении
+                    данных. Нет никаких предварительных затрат на оборудование, но плата за&nbsp;долгосрочное использование
+                    может увеличиться, особенно если предприятию требуется значительный объем памяти.</p>
+                <p><strong>Размещение серверов:</strong> размещение требует более значительных первоначальных инвестиций
+                    в&nbsp;оборудование. Однако после его приобретения текущие расходы обычно ниже, чем при использовании
+                    облачных хранилищ, особенно для&nbsp;предприятий со стабильными потребностями в&nbsp;хранении данных.
+                    Предсказуемая ежемесячная плата за&nbsp;электроэнергию, охлаждение и&nbsp;помещение упрощает формирование
+                    бюджета.</p>
+                <h3>Масштабируемость</h3>
+                <p><strong>Облачные хранилища:</strong> масштабируемость - одно из самых сильных преимуществ облачных
+                    хранилищ. Предприятия могут легко изменять объем хранилища в&nbsp;соответствии со своими потребностями,
+                    что делает его идеальным для&nbsp;растущих компаний или тех, у&nbsp;кого непредсказуемые потребности в&nbsp;объеме
+                    данных.</p>
+                <p><strong>Колокейшн:</strong> хотя услуги колокейшн обеспечивают масштабируемость, они более ограничены
+                    по&nbsp;сравнению с облачными хранилищами. Масштабирование в&nbsp;среде colocation часто требует приобретения
+                    дополнительного оборудования и&nbsp;потенциально большего пространства, что может занять много времени и
+                    средств.</p>
+                <h3>Безопасность</h3>
+                <p><strong>Облачные хранилища:</strong> безопасность облачных хранилищ во многом зависит от провайдера.
+                    Хотя авторитетные провайдеры предлагают надежные меры безопасности, компании должны доверять
+                    протоколам безопасности провайдера, а также применять собственные меры по&nbsp;защите доступа.</p>
+                <p><strong>Услуги размещения:</strong> при использовании услуг colocation компании имеют больше
+                    возможностей для&nbsp;контроля над своими технологиями обеспечения безопасности. Они могут внедрять
+                    собственные протоколы безопасности и&nbsp;иметь прямой доступ к&nbsp;своим серверам для&nbsp;регулярного обновления
+                    и&nbsp;мониторинга. Физическая безопасность в&nbsp;центрах размещения обычно на высшем уровне, что добавляет
+                    еще один уровень защиты.</p>
+                <h2>Когда стоит выбирать облачное хранилище</h2>
+                <p>Облачное хранилище - отличный выбор для&nbsp;компаний, которые ставят во главу угла гибкость и
+                    экономическую эффективность. Оно особенно подходит для&nbsp;компаний с переменными потребностями в
+                    хранении данных, таких как стартапы, малые предприятия или компании с удаленным персоналом. Облачные
+                    хранилища также идеально подходят для&nbsp;компаний, которые не имеют ресурсов для&nbsp;управления собственной
+                    ИТ-инфраструктурой и&nbsp;предпочитают передать эту обязанность стороннему поставщику.</p>
+                <p>Кроме того, облачные хранилища отлично подходят для&nbsp;компаний, которым необходим доступ к&nbsp;данным из
+                    разных мест или требуется частый обмен данными между членами команды. Присущая им масштабируемость
+                    позволяет компаниям расти, не беспокоясь об аппаратных ограничениях.</p>
+                <h2>Когда стоит выбирать услуги colocation</h2>
+                <p>Услуги Colocation лучше всего подходят для&nbsp;компаний, которым требуется больший контроль над своим
+                    оборудованием и&nbsp;данными. Это идеальное решение для&nbsp;компаний с особыми нормативными требованиями,
+                    которые требуют прямого контроля над серверами. Colocation также является хорошим выбором для
+                    компаний со стабильными потребностями в&nbsp;хранении данных, поскольку долгосрочные затраты могут быть
+                    ниже, чем при использовании облачных хранилищ.</p>
+                <p>Для организаций, которые уже инвестировали в&nbsp;собственное оборудование или которым необходимо
+                    запускать специализированные приложения, требующие особых конфигураций, colocation предлагает
+                    идеальный баланс контроля и&nbsp;надежности без необходимости содержать собственный центр обработки
+                    данных.</p>
+                <h2>Выбор</h2>
+                <p>Выбор между облачным хранением и&nbsp;услугами colocation в&nbsp;конечном итоге зависит от конкретных
+                    потребностей, целей и&nbsp;бизнес ресурсов. Оба решения обладают уникальными преимуществами, и&nbsp;правильный
+                    выбор зависит от таких факторов, как необходимый уровень контроля, бюджет и&nbsp;долгосрочные перспективы
+                    хранения данных.</p>
+                <p>Облачные хранилища обеспечивают непревзойденную гибкость и&nbsp;масштабируемость, что делает их
+                    привлекательным вариантом для&nbsp;предприятий, которым необходимо быстро адаптироваться к&nbsp;меняющимся
+                    требованиям. С другой стороны, услуги колокейшн обеспечивают больший контроль и&nbsp;могут быть более
+                    экономически эффективными для&nbsp;предприятий со стабильными потребностями в&nbsp;хранении данных и
+                    необходимостью поддерживать определенные конфигурации оборудования.</p>
+                <p>В современную цифровую эпоху как <a href="/services/cloud">облачные хранилища</a>,
+                    так и&nbsp;<a href="/services/colocation">размещение серверов</a> играют важную роль в
+                    эффективном управлении данными.</p>
+            </div>
+        </div>
+    </div>
+    <div class="module animated">
+        <div class="module-center">
+            <div class="module-title">Почему выбирают нас?</div>
+            <div class="slider primary" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+    <div class="slider__wrapper">
+        <div class="slider__items items-04">
+            <div class="slider__item item-01 box">
+                <a class="box bg-color bg" style="background-image: url(/jpg/colocation_bg.jpg)" href="/services/rack">
+                    <div class="box-align">
+                        <div class="box-title">
+                            Аренда серверных стоек
+                        </div>
+                        <div class="box-text">
+                            Аренда серверной стойки — популярная и востребованная в наше время услуга,
+                            предназначенная для компаний с большим парком серверов (Rack Mount).
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/services_rack.svg"/>
+                    </div>
+                    <div class="box-arrow">
+                        <img class="icon" src="/svg/more_w.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="slider__item item-02 box">
+                <a class="box bg-color bg" style="background-color: #005FFF;" href="/services/colocation">
+                    <div class="box-align">
+                        <div class="box-title">Размещение<br/> серверов</div>
+                        <div class="box-text">
+                            Размещайте свои серверы в&nbsp;нашем премиальном дата-центре, удобно расположенном
+                            в&nbsp;центре Москвы, с&nbsp;легким доступом и&nbsp;высоким уровнем безопасности.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/services_colocation.svg"/>
+                    </div>
+                    <div class="box-arrow">
+                        <img class="icon" src="/svg/more_w.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="slider__item item-03 box">
+                <a class="box bg-color" href="/services/dedicated" style="background-color: #D0E1FF">
+                    <div class="box-align">
+                        <div class="box-title">Аренда<br/> серверов</div>
+                        <div class="box-text">
+                            Индивидуальные серверные решения, разработанные специально для&nbsp;удовлетворения
+                            ваших бизнес-потребностей, с&nbsp;возможностью настройки по&nbsp;запросу.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/services_rent.svg"/>
+                    </div>
+                    <div class="box-arrow">
+                        <img class="icon" src="/svg/more_k.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="slider__item item-04 box">
+                <a class="box bg-color" href="/services/cloud" style="background-color: #D4FFFF">
+                    <div class="box-align">
+                        <div class="box-title">Облачные<br/> решения</div>
+                        <div class="box-text">
+                            Мощные и&nbsp;надежные облачные сервисы, обеспечивающие безопасность и&nbsp;доступность
+                            ваших данных в&nbsp;любом месте и&nbsp;в любое время.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/services_cloud.svg"/>
+                    </div>
+                    <div class="box-arrow">
+                        <img class="icon" src="/svg/more_k.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="slider__item item-05 box">
+                <a class="box bg-color" href="/services/network" style="background-color: #D1FBEB">
+                    <div class="box-align">
+                        <div class="box-title">Сетевые<br/> услуги</div>
+                        <div class="box-text">
+                            Высокоскоростное подключение к&nbsp;интернету и&nbsp;защищенные VPN-сети для&nbsp;вашего бизнеса.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/services_network.svg"/>
+                    </div>
+                    <div class="box-arrow">
+                        <img class="icon" src="/svg/more_k.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="slider__item item-06 box">
+                <a class="box bg-color" href="/services/backup" style="background-color: #EDEDED">
+                    <div class="box-align">
+                        <div class="box-title">Резервное копирование и восстановление данных</div>
+                        <div class="box-text">
+                            Защитите свои данные с помощью надежных решений для резервного копирования.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/services_backup2.svg"/>
+                    </div>
+                    <div class="box-arrow">
+                        <img class="icon" src="/svg/more_k.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="slider__item item-06 box">
+                <a class="box bg-color" href="/services/infosec" style="background-color: #EDEDED">
+                    <div class="box-align">
+                        <div class="box-title">Информационная безопасность</div>
+                        <div class="box-text">
+                            Обеспечьте защиту ваших данных с помощью современных решений по информационной безопасности.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/services_security2.svg"/>
+                    </div>
+                    <div class="box-arrow">
+                        <img class="icon" src="/svg/more_k.svg"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button class="slider__btn slider__btn_prev slider__btn_hide">
+            <img class="icon active" src="/svg/scroll_left_k.svg">
+            <img class="icon blocked" src="/svg/scroll_left_g.svg">
+        </button>
+        <button class="slider__btn slider__btn_next">
+            <img class="icon active" src="/svg/scroll_right_k.svg">
+            <img class="icon blocked" src="/svg/scroll_right_g.svg">
+        </button>
+        <ol class="slider__indicators">
+            <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+            <li class="slider__indicator" data-slide-to="1"></li>
+            <li class="slider__indicator" data-slide-to="2"></li>
+            <li class="slider__indicator" data-slide-to="3"></li>
+            <li class="slider__indicator" data-slide-to="4"></li>
+            <li class="slider__indicator" data-slide-to="5"></li>
+            <li class="slider__indicator" data-slide-to="6"></li>
+        </ol>
+    </div>
+</div>
+        </div>
+        <div class="module animated">
+            <div class="module-center">
+                <div class="module-title">Почему выбирают нас?</div>
+                <div class="slider mobile" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+    <div class="slider__wrapper">
+        <div class="slider__items grid grid-wrap wrap-2">
+            <div class="slider__item item-01 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Престижное расположение</div>
+                        <div class="box-text">
+                            Наш дата-центр находится по&nbsp;адресу Москва, ул. Вятская 27, стр 7,
+                            что обеспечивает легкий доступ для&nbsp;клиентов из любой точки города.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_location.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item item-02 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Бутиковый подход</div>
+                        <div class="box-text">
+                            Персонализированные решения, которые идеально соответствуют вашим
+                            уникальным требованиям, с&nbsp;учетом всех деталей и&nbsp;пожеланий.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_personal.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item item-03 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Высокий уровень безопасности</div>
+                        <div class="box-text">
+                            Современные системы защиты и&nbsp;резервирования, обеспечивающие
+                            непрерывную работу вашего бизнеса.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_security.svg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item item-04 box">
+                <div class="box advantage">
+                    <div class="box-align">
+                        <div class="box-title">Круглосуточная поддержка</div>
+                        <div class="box-text">
+                            Наши специалисты всегда готовы оказать помощь,
+                            чтобы обеспечить бесперебойное функционирование ваших систем.
+                        </div>
+                    </div>
+                    <div class="box-icon">
+                        <img class="icon" src="/svg/adv_support.svg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slider__btn slider__btn_prev slider__btn_hide">
+            <img class="icon active" src="/svg/scroll_left_k.svg">
+            <img class="icon blocked" src="/svg/scroll_left_g.svg">
+        </button>
+        <button class="slider__btn slider__btn_next">
+            <img class="icon active" src="/svg/scroll_right_k.svg">
+            <img class="icon blocked" src="/svg/scroll_right_g.svg">
+        </button>
+        <ol class="slider__indicators">
+            <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+            <li class="slider__indicator" data-slide-to="1"></li>
+            <li class="slider__indicator" data-slide-to="2"></li>
+            <li class="slider__indicator" data-slide-to="3"></li>
+        </ol>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+        <div class="footer">
+    <div class="module arrow">
+        <div class="module-center">
+            <div class="module-bg">
+                <img class="image" src="/jpg/price_bg.jpg"/>
+            </div>
+            <div class="module-content">
+                <div class="module-title">Что делать?</div>
+                <div class="module-text">
+                    <div class="text text-30">Зарегистрируйтесь в&nbsp;панели управления</div>
+                    <div class="block-arrow">
+                        <img class="icon icon-todo" src="/svg/todo_sign-up.svg"/>
+                        <img class="icon icon-arrow" src="/svg/todo_arrow.svg"/>
+                    </div>
+                    <div class="text text-22">
+                        и&nbsp;уже через пару минут сможете арендовать сервер,
+                        развернуть базы данных или обеспечить быструю
+                        доставку контента.
+                    </div>
+                    <div class="buttons">
+                        <a class="button large circle white" href="https://my.radiushost.ru/billmgr?func=register" rel="nofollow" target="_blank">
+                            <div class="button-icons">
+                                <img class="icon icon-01" src="/svg/more_g.svg"/>
+                            </div>
+                            <div class="button-text">В панель управления</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="module">
+        <div class="module-center">
+            <h2 class="module-title">Если остались вопросы</h2>
+            <div class="module-text">
+                Расскажите о&nbsp;вашей задаче.<br/>
+                Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение рабочего дня и&nbsp;подберем сервисы под проект.
+            </div>
+            <div class="module-buttons">
+                <button class="button primary circle blue widget-button">
+                    <div class="button-icons">
+                        <img class="icon icon-01" src="/svg/consult.svg"/>
+                    </div>
+                    <div class="button-text">Получить консультацию</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="module dark">
+        <div class="module-center">
+            <div class="grid">
+                <div class="column column-01 info">
+                    <h2 class="module-title">Нужна помощь?</h2>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="tel:+74956410412">
+                                <div class="link-icons">
+                                    <img class="icon icon-01" src="/svg/phone_g.svg"/>
+                                </div>
+                                <div class="link-text">Звоните <b>+7 (495) 641-04-12</b></div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="mailto:sales@radistr.ru">
+                                <div class="link-icons">
+                                    <img class="icon icon-01" src="/svg/email_g.svg"/>
+                                </div>
+                                <div class="link-text">Пишите <b>sales@radistr.ru</b></div>
+                            </a>
+                        </div>
+                        <div class="row">— изучим задачу и&nbsp;подберем<br/> подходящее решение.</div>
+                    </div>
+                    <div class="group">
+                        <div class="row">
+                            Если у&nbsp;вас проблема в&nbsp;работе услуг —<br/>
+                            <a class="link" href="https://my.radiushost.ru/billmgr#/?func=clientticket.edit" rel="nofollow" target="_blank"><b>создайте тикет</b></a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-02 nav">
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/about">О компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">История компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">Миссия и&nbsp;ценности</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">Команда</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/about">Сертификаты и&nbsp;награды</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/environment">Инфраструктура</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/features">Технические особенности</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/cooling">Системы охлаждения</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/power">Системы электропитания</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/security">Системы безопасности</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/rooms">Серверные комнаты</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/environment/networking">Подключение к&nbsp;сетям</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-03 nav">
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/services">Услуги</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/rack">Аренда серверной стойки</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/colocation">Размещение серверов</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/dedicated">Аренда серверов</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/cloud">Облачные решения</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/network">Сетевые услуги</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/backup">Резервное копирование </a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/services/infosec">Информационная безопасность</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/price">Цены</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/rack">Аренда серверной стойки</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/colocation">Размещение сервера (colocation)</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/dedicated">Аренда сервера</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/vps">Виртуальные серверы (VDS/VPS)</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/storage">Хранение данных</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/support">Администрирование</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/price/ssl">Сертификаты (SSL)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-04 nav">
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/knowledge">База знаний</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/knowledge">Новости компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/knowledge">Статьи и&nbsp;исследования</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/clients">Клиентам</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/faq">Частые вопросы</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/documents">Документы и&nbsp;соглашения</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/company">Реквизиты компании</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/clients/support">Поддержка</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="https://my.radiushost.ru/billmgr" target="_blank" rel="nofollow">Личный кабинет</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row title">
+                            <a class="link" href="/contacts">Контакты</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/contacts">Контактная информация</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/contacts">Форма обратной связи</a>
+                        </div>
+                        <div class="row">
+                            <a class="link" href="/contacts">Схема проезда</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © ООО «Радистр», торговая марка "Radistr" — услуги виртуального хостинга и&nbsp;дата-центр<br/>
+                Лицензия на&nbsp;телематические услуги № 176267
+            </div>
+            <div class="policy">
+                <a class="link" href="/files/data-policy.pdf" target="_blank">
+                    Политика в&nbsp;отношении обработки персональных данных
+                </a>
+            </div>
+            <div class="logo">
+                <img class="icon icon-01" src="/svg/logo_footer.svg"/>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="popup-wrapper">
+        <div class="popup primary">
+            <div class="popup-close">
+                <img src="/svg/close_g.svg"/>
+                <img src="/svg/close_k.svg"/>
+            </div>
+            <div class="title"></div>
+            <form class="form" id="formId">
+                <div class="product"></div>
+                <label class="field input">
+                    <input type="text" required="">
+                    <span class="name">* Имя</span>
+                    <span class="error">Проверьте правильность заполнения поля</span>
+                </label>
+                <label class="field input">
+                    <input type="text" required="">
+                    <span class="name">* Эл. почта</span>
+                    <span class="error">Проверьте правильность заполнения поля</span>
+                </label>
+                <label class="field text">
+                    <textarea required=""></textarea>
+                    <span class="name">* Текст</span>
+                    <span class="error">Проверьте правильность заполнения поля</span>
+                </label>
+                <label class="field checkbox">
+                    <input type="checkbox">
+                    <span class="icons">
+                        <img class="icon one" src="/svg/checkbox.svg"/>
+                        <img class="icon two" src="/svg/checkbox_on.svg"/>
+                    </span>
+                    <span class="text">
+                        Подтверждаю согласие с политикой обработки персональных данных
+                    </span>
+                </label>
+                <button class="button circle primary blue" type="submit">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        (function(d,t) {
+            var BASE_URL="https://app.chatwoot.com";
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=BASE_URL+"/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g,s);
+            g.onload=function(){
+                window.chatwootSDK.run({
+                    websiteToken: 'BibD7GuVPKX9U4qGntQfXu15',
+                    baseUrl: BASE_URL
+                })
+            }
+        })(document,"script");
+    </script>
+    <script async src="/js/index.js"></script>
+    <script async src="/js/slider-swiper.js"></script>
+</body>
+</html>

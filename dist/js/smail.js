@@ -5,15 +5,6 @@ const button = form.querySelector('.button');
 const formError = form.querySelector('.buttons .error');
 const formMessage = form.querySelector('.buttons .message');
 
-const carts = document.querySelectorAll('.cart-button');
-console.log(carts)
-carts.forEach(item=>{
-    item.addEventListener('click', (e)=>{
-        console.log(e.currentTarget)
-        const id = e.currentTarget;
-    })
-})
-
 // Функция для проверки валидности поля
 function validateField(input) {
     const field = input.closest('.field');

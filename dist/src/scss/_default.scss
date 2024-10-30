@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+	background: none;
+	outline: none;
+	resize: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+body, html {
+	padding: 0;
+	margin: 0;
+}
+body {
+	@include ProximaNova-Regular;
+	background: $white;
+	line-height: 1.37;
+	@include text-16;
+	color: $grey-33;
+	@media screen and (max-width: 1024px) {
+	}
+	&.fixed {
+		overflow: hidden;
+		height: 100vh;
+	}
+}
+b, strong {
+	@include ProximaNova-Bold;
+}
+table {
+	border-collapse: collapse;
+}
+button {
+	transition: all 250ms;
+	cursor: pointer;
+}
+h1, h2, h3, h4, b, strong {
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+}
+img {
+    image-rendering: -webkit-optimize-contrast;
+}

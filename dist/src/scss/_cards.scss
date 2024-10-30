@@ -1,0 +1,72 @@
+.block-cards {
+  height: calc(var(--interval-100) * 4);
+  position: relative;
+  .box.card {
+    position: absolute;
+    &.box-01 {
+      left: 0;
+      top: 0;
+    }
+    &.box-02 {
+      left: calc(var(--interval-100) * 3);
+      top: calc(var(--interval-100) * 1.7);
+      z-index: 2;
+    }
+    &.box-03 {
+      left: calc(var(--interval-100) * 6.1);
+      top: calc(var(--interval-10) * -1);
+    }
+    &.box-04 {
+      left: calc(var(--interval-100) * 9.1);
+      top: calc(var(--interval-100) * 1.2);
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    height: 73vw;
+    .box.card {
+      position: absolute;
+      &.box-01 {
+        left: 3vw;
+        top: 0;
+      }
+      &.box-02 {
+        left: 45vw;
+        top: 15vw;
+        z-index: 2;
+      }
+      &.box-03 {
+        left: 3vw;
+        top: 32vw;
+        z-index: 3;
+      }
+      &.box-04 {
+        left: 45vw;
+        top: 47vw;
+      }
+    }
+  }
+  @media screen and (max-width: 640px) {
+    height: 153vw;
+    .box.card {
+      position: absolute;
+      &.box-01 {
+        left: 0;
+        top: 0;
+      }
+      &.box-02 {
+        left: 8vw;
+        top: 35vw;
+        z-index: 2;
+      }
+      &.box-03 {
+        left: 0;
+        top: 71vw;
+        z-index: 3;
+      }
+      &.box-04 {
+        left: 8vw;
+        top: 107vw;
+      }
+    }
+  }
+}

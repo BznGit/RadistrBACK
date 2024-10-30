@@ -1,0 +1,393 @@
+.main {
+  &.banner {
+    background: linear-gradient(180deg, $white 0%, $white 30%, $grey-d2 100%);
+    padding-top: calc(var(--interval-70) / 2);
+    height: calc(var(--interval-100) * 4.7);
+    border-bottom: 2px solid $grey-d2;
+    overflow: hidden;
+    .center {
+      position: relative;
+      height: 100%;
+    }
+    .banner-text {
+      animation-timing-function: ease-out;
+      animation-iteration-count: 1;
+      animation-fill-mode: both;
+      animation-duration: .8s;
+      transform: translateX(-10vw);
+      animation-delay: 1800ms;
+      opacity: 0;
+      .text {
+        @include text-58;
+        line-height: 1.2;
+        color: $black;
+        &.blue {
+          position: absolute;
+          color: $blue;
+          left: calc(var(--interval-100) * 5.9);
+          top: var(--interval-70);
+        }
+      }
+      .arrow {
+        position: absolute;
+        height: calc(var(--interval-10) * 4.2);
+        width: calc(var(--interval-100) * 1.9);
+        left: calc(var(--interval-100) * 3.6);
+        top: calc(var(--interval-10) * 8.8);
+        .image {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+    .banner-city {
+      position: absolute;
+      height: calc(var(--interval-100) * 2.67);
+      right: var(--interval-30);
+      left: var(--interval-30);
+      bottom: 0;
+      .structure {
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-duration: .7s;
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        opacity: 0;
+        bottom: 0;
+        .image {
+          animation-timing-function: linear;
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+          animation-duration: .7s;
+          position: absolute;
+          width: 100%;
+          bottom: -1px;
+          left: 0;
+          &.image-01 {
+            transform: translateX(-2px);
+            animation-delay: 2200ms;
+            z-index: 2;
+          }
+          &.image-02 {
+            animation-delay: 2200ms;
+            bottom: 0;
+            z-index: 1;
+            opacity: 0;
+            left: -2px;
+          }
+        }
+        &.structure-01,
+        &.structure-02,
+        &.structure-03,
+        &.structure-04,
+        &.structure-05,
+        &.structure-06 {
+          transform: translateX(-10vw);
+        }
+        &.structure-07 {
+          transform: translateY(10vw);
+        }
+        &.structure-08,
+        &.structure-09,
+        &.structure-10,
+        &.structure-11,
+        &.structure-12,
+        &.structure-13,
+        &.structure-14 {
+          transform: translateX(10vw);
+        }
+        &.structure-01 {
+          animation-delay: 1800ms;
+          z-index: 3;
+          width: 6.8%;
+          left: 0;
+        }
+        &.structure-02 {
+          animation-delay: 1600ms;
+          z-index: 2;
+          width: 12.6%;
+          left: 1.9%;
+        }
+        &.structure-03 {
+          animation-delay: 1400ms;
+          z-index: 1;
+          width: 11%;
+          left: 11%;
+        }
+        &.structure-04 {
+          animation-delay: 1200ms;
+          z-index: 2;
+          width: 9.9%;
+          left: 17.6%;
+        }
+        &.structure-05 {
+          animation-delay: 1000ms;
+          z-index: 3;
+          width: 11.7%;
+          left: 24.8%;
+        }
+        &.structure-06 {
+          z-index: 2;
+          width: 9.1%;
+          left: 33.2%;
+        }
+        &.structure-07 {
+          animation-delay: 900ms;
+          z-index: 3;
+          width: 19.1%;
+          left: 40%;
+        }
+        &.structure-08 {
+          animation-delay: 1100ms;
+          z-index: 2;
+          width: 14.9%;
+          left: 57%;
+        }
+        &.structure-09 {
+          animation-delay: 1300ms;
+          z-index: 1;
+          width: 4.7%;
+          left: 71.7%;
+        }
+        &.structure-10 {
+          animation-delay: 1500ms;
+          z-index: 2;
+          width: 3%;
+          left: 75.4%;
+        }
+        &.structure-11 {
+          animation-delay: 1700ms;
+          z-index: 3;
+          width: 2.2%;
+          right: 16.4%;
+        }
+        &.structure-12 {
+          animation-delay: 1900ms;
+          z-index: 1;
+          width: 11.4%;
+          right: 11.4%;
+        }
+        &.structure-13 {
+          animation-delay: 2100ms;
+          z-index: 2;
+          width: 9.5%;
+          right: 7.8%;
+        }
+        &.structure-14 {
+          animation-delay: 1700ms;
+          z-index: 3;
+          width: 10.2%;
+          right: 0;
+        }
+      }
+      .logo {
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-duration: .5s;
+        transform: translateY(100vw);
+        animation-delay: 2200ms;
+        position: absolute;
+        bottom: calc(var(--interval-10) * 9.8);
+        right: 30.2%;
+        width: 1.75%;
+        .image {
+          width: 100%;
+          &.image-01 {
+            position: relative;
+            z-index: 2;
+          }
+          &.image-02 {
+            position: absolute;
+            z-index: 1;
+            left: -2px;
+            top: 0;
+          }
+        }
+        .icon-pointer {
+          margin-bottom: var(--interval-15);
+          position: relative;
+          height: var(--interval-30);
+          float: right;
+          width: 100%;
+        }
+        .icon-logo {
+          position: relative;
+          float: right;
+          width: 137%;
+        }
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      height: 65vw;
+      .banner-text {
+        .text {
+          @include text-58;
+          line-height: 1.2;
+          color: $black;
+          &.regular {
+            br {
+              display: none;
+            }
+          }
+          &.blue {
+            position: static;
+            text-align: right;
+          }
+          &.black {
+            text-align: center;
+          }
+        }
+        .arrow {
+          position: absolute;
+          top: 17.5vw;
+          left: 4vw;
+          .image {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .banner-city {
+        right: -50vw;
+        left: -50vw;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      height: 125vw;
+      .banner-text {
+        padding-top: 7vw;
+        .text {
+          font-size: 10vw;
+          &.black {
+            text-align: left;
+          }
+        }
+        .arrow {
+          top: 56.5vw;
+          left: 1vw;
+          height: auto;
+          width: 42vw;
+        }
+      }
+      .banner-city {
+        right: -65vw;
+        left: -80vw;
+      }
+    }
+  }
+}
+.animated.checked {
+  .banner-text {
+    animation-name: primary-move-left;
+  }
+  .structure {
+    opacity: 1;
+    .image {
+      &.image-01 {
+        animation-name: city-white-move;
+      }
+      &.image-02 {
+        animation-name: city-shadow-fade;
+      }
+    }
+    &.structure-01,
+    &.structure-02,
+    &.structure-03,
+    &.structure-04,
+    &.structure-05 {
+      animation-name: primary-move-left;
+    }
+    &.structure-06{
+      animation-name: primary-move-up;
+    }
+    &.structure-07,
+    &.structure-08,
+    &.structure-09,
+    &.structure-10,
+    &.structure-11,
+    &.structure-12,
+    &.structure-13,
+    &.structure-14 {
+      animation-name: primary-move-right;
+    }
+  }
+  .logo {
+    animation-name: primary-move-up;
+  }
+}
+
+.block-banner {
+  width: calc(var(--interval-100) * 6.4);
+  margin-top: var(--interval-30);
+  position: relative;
+  & + * {
+    margin-top: var(--interval-40);
+  }
+  .banner-image {
+    border-radius: var(--interval-15);
+    overflow: hidden;
+    .image {
+      display: block;
+      width: 100%;
+    }
+  }
+  .banner-content {
+    padding: var(--interval-40) var(--interval-75);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    .image {
+      margin-bottom: var(--interval-30);
+      display: block;
+      &.logo {
+        width: 100%;
+      }
+      &.arrow {
+        margin-left: -20%;
+        width: 145%;
+      }
+    }
+    .text {
+      @include text-22;
+      color: $white;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    margin-right: -6vw;
+    margin-left: -6vw;
+    width: auto;
+    .banner-image {
+      border-radius: 0;
+    }
+    .banner-content {
+      padding: 6vw;
+      .image {
+        &.arrow {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes city-shadow-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes city-white-move {
+  0% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

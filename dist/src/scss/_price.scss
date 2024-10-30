@@ -1,0 +1,14 @@
+.price {
+  align-items: flex-end;
+  display: inline-flex;
+  .price-number {
+    @include ProximaNova-Bold;
+    @include text-58;
+    line-height: 1;
+  }
+  .price-value {
+    margin-left: 10px;
+    line-height: 1.5;
+    @include text-22;
+  }
+}

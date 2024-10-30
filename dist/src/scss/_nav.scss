@@ -1,0 +1,14 @@
+.block-nav {
+  position: absolute;
+  top: var(--interval-25);
+  .link {
+    .icon {
+      width: calc(var(--interval-10) * 3.4);
+    }
+    .text {
+      padding-left: var(--interval-10);
+      @include text-14;
+      color: $grey-33;
+    }
+  }
+}

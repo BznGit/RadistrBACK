@@ -1,0 +1,37 @@
+.chipsets {
+  flex-wrap: wrap;
+  margin: 0 -6px;
+  display: flex;
+  .chipsets-item {
+    border: 1px solid $grey-cc;
+    white-space: nowrap;
+    border-radius: 5px;
+    height: 38px;
+    width: 38px;
+    margin: 6px;
+    .item-value {
+      vertical-align: bottom;
+      display: inline-block;
+      @include text-16;
+      line-height: .9;
+    }
+    .item-unit {
+      vertical-align: bottom;
+      display: inline-block;
+      margin-left: -5px;
+      font-size: 8px;
+    }
+    &.green {
+      background: #DDF3F0;
+    }
+    &.grey {
+      background: $grey-ed;
+    }
+    &.yellow {
+      background: #FFEFD6;
+    }
+    &.red {
+      background: #F7E2E1;
+    }
+  }
+}

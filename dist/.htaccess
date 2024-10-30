@@ -1,0 +1,4 @@
+AuthType Basic 
+AuthName "radistr" 
+AuthUserFile /home/188407/data/www/radistr.ru/.htpasswd 
+require valid-user

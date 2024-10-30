@@ -1,0 +1,188 @@
+.form {
+  border-radius: var(--interval-15);
+  padding: var(--interval-40);
+  background-color: $grey-ed;
+  width: 49%;
+  .field {
+    margin-bottom: var(--interval-30);
+    position: relative;
+    display: block;
+    .name {
+      transition: all 300ms;
+      position: absolute;
+      color: $grey-99;
+      left: var(--interval-20);
+      top: var(--interval-15);
+    }
+    .error {
+      transition: all 300ms;
+      position: absolute;
+      top: calc(100% + var(--interval-5));
+      @include text-12;
+      color: $red;
+      opacity: 0;
+    }
+    &.input {
+      input {
+        border: 1px solid $grey-cc;
+        @include ProximaNova-Regular;
+        background-color: $white;
+        border-radius: var(--interval-5);
+        font-size: inherit;
+        color: $grey-33;
+        padding: var(--interval-5) var(--interval-20) 0;
+        display: block;
+        height: 55px;
+        width: 100%;
+        &:active, &:valid, &:focus {
+          border: 1px solid $grey-33;
+          & + .name {
+            @include text-12;
+            top: var(--interval-5);
+          }
+        }
+      }
+    }
+    &.text {
+      textarea {
+        border: 1px solid $grey-cc;
+        @include ProximaNova-Regular;
+        background-color: $white;
+        border-radius: var(--interval-5);
+        font-size: inherit;
+        padding: var(--interval-20) var(--interval-20);
+        color: $grey-33;
+        display: block;
+        height: (--interval-95);
+        width: 100%;
+        &:active, &:valid, &:focus {
+          border: 1px solid $grey-33;
+          & + .name {
+            @include text-12;
+            top: var(--interval-5);
+          }
+        }
+      }
+    }
+    &.checkbox {
+      align-items: flex-start;
+      cursor: pointer;
+      display: flex;
+      input {
+        display: none;
+        &:checked {
+          & ~ .icons {
+            .icon {
+              &.one {
+                opacity: 0;
+              }
+              &.two {
+                opacity: 1;
+              }
+            }
+          }
+          & ~ .text {
+            color: $black;
+          }
+        }
+      }
+      .icons {
+        display: inline-block;
+        position: relative;
+        margin-right: var(--interval-10);
+        margin-top: 3px;
+        height: var(--interval-20);
+        width: var(--interval-20);
+        .icon {
+          transition: all 300ms;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 0;
+          &.two {
+            opacity: 0;
+          }
+        }
+      }
+      .text {
+        transition: all 300ms;
+        display: inline-block;
+        color: $grey-7f;
+        width: 85%;
+      }
+    }
+    &.error {
+      .error {
+        opacity: 1;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 6vw;
+    .field {
+      margin-bottom: 6vw;
+      .name {
+        top: 4.5vw;
+      }
+      &.input {
+        input {
+          padding: 2vw 4vw 0;
+          display: block;
+          height: 15vw;
+          &:active, &:valid, &:focus {
+            & + .name {
+              font-size: 3vw;
+              top: 1vw;
+            }
+          }
+        }
+      }
+      &.text {
+        textarea {
+          padding: 4vw;
+          height: 50vw;
+          &:active, &:valid, &:focus {
+            & + .name {
+              font-size: 3vw;
+              top: 1vw;
+            }
+          }
+        }
+      }
+      &.checkbox {
+        .icons {
+          margin-right: 4vw;
+          margin-top: 0vw;
+          height: 6vw;
+          width: 6vw;
+        }
+      }
+    }
+  }
+}
+
+.form-image {
+  position: relative;
+  height: 0;
+  .image-align {
+    width: calc(var(--interval-100) * 2);
+    position: absolute;
+    left: 51%;
+    top: var(--interval-50);
+    .image {
+      margin-bottom: var(--interval-10);
+      width: 100%;
+    }
+    .text {
+      color: $grey-99;
+      text-align: center;
+      @include text-75;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}

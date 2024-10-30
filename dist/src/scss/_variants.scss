@@ -1,0 +1,727 @@
+.variants {
+  &.block {
+    position: relative;
+    padding-top: 50%;
+    text-align: center;
+    .block-item {
+      position: absolute;
+      z-index: 2;
+      top: 100px;
+      .item-title {
+        @include primary-animation;
+        @include ProximaNova-Bold;
+        white-space: nowrap;
+        margin-bottom: 10px;
+        @include text-36;
+        overflow: hidden;
+        width: 0;
+      }
+      .item-text {
+        @include primary-animation;
+        margin-bottom: 20px;
+        @include text-18;
+        opacity: 0;
+      }
+      .item-arrow {
+        @include primary-animation;
+        position: absolute;
+        opacity: 0;
+      }
+      .button {
+        @include primary-animation;
+        opacity: 0;
+      }
+      &.left {
+        left: 1.5%;
+        .item-arrow {
+          top: 112%;
+          left: 48%;
+        }
+      }
+      &.right {
+        right: -4%;
+        .item-arrow {
+          width: 15%;
+          top: 112%;
+          left: 31%;
+        }
+      }
+    }
+    .block-schema {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      .schema-item {
+        position: absolute;
+        .item-name {
+          @include primary-animation;
+          top: calc(100% + 10px);
+          position: absolute;
+          @include text-20;
+          left: -100%;
+          width: 300%;
+          opacity: 0;
+        }
+        .item-icon {
+          @include primary-animation;
+          border-radius: 100%;
+          transform: scale(0);
+          img {
+            @include primary-animation;
+            display: block;
+            width: 100%;
+            opacity: 0;
+          }
+        }
+        .item-chain {
+          @include primary-animation;
+          position: absolute;
+          opacity: 0;
+          width: 31%;
+          top: 100%;
+          &:before, &:after {
+            border-radius: 100%;
+            background: $white;
+            position: absolute;
+            height: 9px;
+            width: 9px;
+            content: '';
+            top: -12px;
+          }
+          &:before {
+            left: 0;
+          }
+          &:after {
+            right: 0;
+          }
+          &.left {
+            transform: rotate(-45deg);
+            right: 85%;
+          }
+          &.center {
+            transform: rotate(90deg);
+          }
+          &.right {
+            transform: rotate(45deg);
+            left: 85%;
+          }
+        }
+        .item-add {
+          @include primary-animation;
+          transform: rotate(360deg);
+          justify-content: center;
+          align-items: center;
+          background: $grey-ed;
+          border-radius: 100%;
+          position: absolute;
+          overflow: hidden;
+          display: flex;
+          bottom: -6%;
+          right: -6%;
+          height: 40%;
+          width: 40%;
+          z-index: 2;
+          opacity: 0;
+          img {
+            display: block;
+            width: 60%;
+          }
+        }
+        &.ea {
+          transform: translateX(-50%);
+          width: 13.4%;
+          left: 50%;
+          top: 8%;
+          .item-name {
+            color: #2B8FFF;
+            top: -30px;
+          }
+          .item-icon {
+            background: #2B8FFF;
+          }
+          .item-chain {
+            border-top: 5px solid $orange;
+            &:before, &:after {
+              border: 5px solid $orange;
+            }
+          }
+        }
+        &.node {
+          width: 8.45%;
+          top: 36.8%;
+          &.left {
+            left: 34%;
+          }
+          &.right {
+            right: 34%;
+            .item-chain {
+              &.left, &.right {
+                border-top: 5px solid #5F9EE3;
+                &:before, &:after {
+                  border: 5px solid #5F9EE3;
+                }
+              }
+            }
+          }
+          .item-name {
+            color: $orange;
+          }
+          .item-icon {
+            background: $orange;
+          }
+          .item-chain {
+            border-top: 5px solid $blue;
+            width: 60%;
+            top: 110%;
+            &:before, &:after {
+              border: 5px solid $blue;
+            }
+            &.center {
+              width: 50%;
+              top: 165%;
+              left: 26%;
+            }
+          }
+        }
+        &.miner {
+          top: 59%;
+          .item-icon {
+            background: $blue;
+          }
+          .item-chain {
+            border-top: 3px solid $grey-7f;
+            width: 50%;
+            top: 110%;
+            &:before, &:after {
+              border: 3px solid $grey-7f;
+              top: -9px;
+            }
+            &.center {
+              width: 40px;
+              top: 150%;
+              left: 32%;
+            }
+          }
+          .item-miner {
+            @include primary-animation;
+            margin: 25px auto 0;
+            position: relative;
+            opacity: 0;
+            width: 65%;
+            &:before {
+              transform: translateX(-50%);
+              position: absolute;
+              content: '';
+              height: 30px;
+              width: 4px;
+              top: -28px;
+              left: 50%;
+            }
+            .icon {
+              &.miner {
+                width: 100%;
+              }
+              &.miners {
+                position: absolute;
+                width: 110%;
+                left: 10%;
+                top: 10%;
+              }
+              &.fan {
+                @include primary-animation;
+                transform: rotate(0deg);
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 0;
+              }
+            }
+          }
+          .schema-item {
+            width: 59%;
+            top: 128%;
+            &.left {
+              left: -85%;
+            }
+            &.center {
+              left: 21%;
+              top: 180%;
+            }
+            &.right {
+              right: -85%;
+            }
+          }
+          &.large {
+            width: 5.4%;
+            .item-icon {
+              background: $blue;
+            }
+            .item-miner {
+              &:before {
+                background: $blue;
+              }
+            }
+            &.one {
+              left: 25.5%;
+            }
+            &.two {
+              right: 35.6%;
+              top: 71%;
+              .item-name {
+                top: calc(100% + 5px);
+              }
+            }
+          }
+          &.small {
+            width: 4.2%;
+            .item-name {
+              font-size: 15px;
+              color: #5F9EE3;
+              &.left {
+                right: calc(100% + 10px);
+                text-align: right;
+                width: 70px;
+                left: auto;
+                top: 0;
+              }
+              &.right {
+                left: calc(100% + 10px);
+                text-align: left;
+                width: 70px;
+                top: 0;
+              }
+            }
+            .item-icon {
+              background: #5F9EE3;
+            }
+            .item-miner {
+              &:before {
+                background: #5F9EE3;
+              }
+            }
+            &.one {
+              right: 45.3%;
+            }
+            &.two {
+              right: 27%;
+            }
+          }
+          &.right {
+            right: 23.7%;
+          }
+          .item-name {
+            color: $blue;
+          }
+        }
+      }
+    }
+    &.animated.checked {
+      .block-item {
+        .item-title {
+          animation-name: primary-typing;
+          animation-delay: 350ms;
+          width: 100%;
+        }
+        .item-text {
+          animation-name: module-primary-fade;
+          animation-delay: 600ms;
+          opacity: 1;
+        }
+        .item-arrow {
+          animation-name: module-primary-fade;
+          animation-delay: 2600ms;
+          opacity: 1;
+        }
+        .button {
+          animation-name: module-primary-fade;
+          animation-delay: 750ms;
+          opacity: 1;
+        }
+      }
+      .block-schema {
+        .schema-item {
+          .item-name {
+            animation-name: module-primary-fade;
+            opacity: 1;
+          }
+          .item-icon {
+            animation-name: module-primary-scale;
+            transform: scale(1);
+            img {
+              animation-name: module-primary-fade;
+              opacity: 1;
+            }
+          }
+          .item-chain {
+            animation-name: module-primary-fade;
+            opacity: 1;
+          }
+          .item-add {
+            animation-name: module-primary-rotate;
+            transform: rotate(0);
+            opacity: 1;
+          }
+          .item-miner {
+            animation-name: module-primary-fade;
+            opacity: 1;
+            .icon.fan {
+              animation-name: gears-rotate-right;
+              animation-iteration-count: infinite;
+              transform: rotate(360deg);
+            }
+          }
+          &.ea {
+            .item-name {
+              animation-delay: 250ms;
+            }
+            .item-icon {
+              img {
+                animation-delay: 250ms;
+              }
+            }
+            .item-chain {
+              animation-delay: 950ms;
+            }
+          }
+          &.node {
+            .item-icon {
+              animation-delay: 1100ms;
+              img {
+                animation-delay: 1350ms;
+              }
+            }
+            .item-name {
+              animation-delay: 1350ms;
+            }
+            .item-chain {
+              animation-delay: 1650ms;
+            }
+            .item-add {
+              animation-delay: 1300ms;
+            }
+          }
+          &.miner {
+            .item-icon {
+              animation-delay: 1900ms;
+              img {
+                animation-delay: 2150ms;
+              }
+            }
+            .item-add {
+              animation-delay: 2400ms;
+            }
+            .item-miner {
+              animation-delay: 2700ms;
+              .icon.fan {
+                animation-delay: 2800ms;
+              }
+            }
+            .item-name {
+              animation-delay: 2800ms;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 1366px) {
+      .block-item {
+        top: 0;
+        .item-arrow {
+          display: none;
+        }
+        &.right {
+          right: 0;
+        }
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      padding-top: 62%;
+      .block-item {
+        top: 2%;
+        .item-title {
+          margin-bottom: 0;
+          font-size: 3.5vw;
+        }
+        .item-text {
+          margin-bottom: 1vw;
+          font-size: 2vw;
+        }
+        &.left {
+          left: 0;
+        }
+      }
+      .block-schema {
+        height: 78%;
+        width: 110%;
+        left: -5%;
+        top: 22%;
+        .schema-item {
+          .item-name {
+            font-size: 2vw;
+          }
+          .item-chain {
+            width: 5vw;
+            &:before, &:after {
+              height: 0.8vw;
+              width: 0.8vw;
+              top: -1.15vw;
+            }
+          }
+          &.ea {
+            .item-name {
+              top: -2.5vw;
+            }
+            .item-chain {
+              border-top: .5vw solid $orange;
+              top: 90%;
+              &:before, &:after {
+                border: .5vw solid $orange;
+              }
+              &.left {
+                right: 90%;
+              }
+              &.right {
+                left: 90%;
+              }
+            }
+          }
+          &.node {
+            top: 38%;
+            .item-name {
+              top: calc(100% + .5vw);
+              font-size: 1.5vw;
+            }
+            .item-chain {
+              border-top: .5vw solid $orange;
+              top: 107%;
+              &:before, &:after {
+                border: .5vw solid $orange;
+              }
+              &.center {
+                border-top: .5vw solid $blue;
+                width: 55%;
+                top: 157%;
+                left: 22%;
+                &:before, &:after {
+                  border: .5vw solid $blue;
+                }
+              }
+            }
+            &.left {
+              left: 33%;
+            }
+            &.right {
+              right: 33%;
+              .item-chain {
+                &.left, &.right {
+                  border-top: .5vw solid #5F9EE3;
+                  &:before, &:after {
+                    border: .5vw solid #5F9EE3;
+                  }
+                }
+              }
+            }
+          }
+          &.miner {
+            top: 62%;
+            .item-name {
+              top: calc(100% + .5vw);
+              font-size: 1.5vw;
+            }
+            .item-miner {
+              margin: 2.9vw auto 0;
+              &:before {
+                height: 3vw;
+                width: 0.4vw;
+                top: -3vw;
+              }
+            }
+            &.large {
+              &.one {
+                left: 24.8%;
+              }
+              &.two {
+                right: 34.5%;
+                top: 75%;
+                .item-name {
+                  top: 100%;
+                }
+              }
+            }
+            &.small {
+              .item-name {
+                font-size: 1.2vw;
+                &.left {
+                  right: calc(100% + 0.5vw);
+                  width: 7vw;
+                }
+                &.right {
+                  left: calc(100% + 0.5vw);
+                  width: 7vw;
+                }
+              }
+              &.one {
+                right: 44.8%;
+              }
+              &.two {
+                right: 25.5%;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 640px) {
+      padding-top: 135%;
+      .block-item {
+        width: 55%;
+        top: 2%;
+        .item-title {
+          margin-bottom: 2vw;
+          font-size: 3.7vw;
+        }
+        .item-text {
+          display: none;
+        }
+        &.left {
+          left: -5%;
+        }
+        &.right {
+          right: -5%;
+        }
+      }
+      .block-schema {
+        width: 100%;
+        height: 85%;
+        left: 0;
+        top: 29%;
+        .schema-item {
+          .item-name {
+            font-size: 3vw;
+          }
+          .item-chain {
+            width: 8vw;
+            &:before, &:after {
+              height: 0.8vw;
+              width: 0.8vw;
+              top: -1.6vw;
+            }
+          }
+          &.ea {
+            width: 30%;
+            left: 50%;
+            top: 0;
+            .item-name {
+              top: -4.5vw;
+            }
+            .item-chain {
+              border-top: .8vw solid $orange;
+              top: 97%;
+              &:before, &:after {
+                border: .8vw solid $orange;
+              }
+            }
+          }
+          &.node {
+            width: 16%;
+            top: 30%;
+            &.left {
+              left: 20.5%;
+            }
+            &.right {
+              right: 20.5%;
+              .item-chain {
+                &.left, &.right {
+                  border-top: .8vw solid #5F9EE3;
+                  &:before, &:after {
+                    border: .8vw solid #5F9EE3;
+                  }
+                }
+              }
+            }
+            .item-name {
+              font-size: 2.7vw;
+            }
+            .item-chain {
+              border-top: .8vw solid $blue;
+              top: 155%;
+              &:before, &:after {
+                border: .8vw solid $blue;
+                height: 0.8vw;
+                width: 0.8vw;
+                top: -1.6vw;
+              }
+              &.center {
+                border-top: .8vw solid $blue;
+                width: 55%;
+                top: 170%;
+                left: 22%;
+                &:before, &:after {
+                  border: .8vw solid $blue;
+                }
+              }
+            }
+          }
+          &.miner {
+            width: 15%;
+            top: 56%;
+            .item-name {
+              bottom: -4.5vw;
+            }
+            .item-miner {
+              margin: 2.9vw auto 0;
+              &:before {
+                height: 3vw;
+                width: 0.4vw;
+                top: -3vw;
+              }
+            }
+            &.large {
+              width: 11%;
+              .item-name {
+                font-size: 2.7vw;
+              }
+              &.one {
+                left: 6.2%;
+              }
+              &.two {
+                right: 23%;
+                top: 60%;
+                .item-name {
+                  top: 100%;
+                }
+              }
+            }
+            &.small {
+              width: 9vw;
+              .item-name {
+                font-size: 2.2vw;
+                &.left {
+                  right: calc(100% + 1.5vw);
+                  width: 12vw;
+                }
+                &.right {
+                  left: calc(100% + 1.5vw);
+                  width: 12vw;
+                }
+              }
+              &.one {
+                right: 41%;
+              }
+              &.two {
+                right: 7%;
+              }
+            }
+          }
+        }
+      }
+      & + .block.faq {
+        position: relative;
+        z-index: 3;
+      }
+    }
+  }
+}

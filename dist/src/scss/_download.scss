@@ -1,0 +1,24 @@
+.download {
+  margin-top: var(--interval-10);
+  .download-row {
+    &.download-row {
+      margin-top: var(--interval-10);
+    }
+  }
+  .download-link {
+    transition: all 300ms;
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    .link-icon {
+      width: var(--interval-25);
+    }
+    .link-text {
+      padding-left: var(--interval-10);
+      @include text-16;
+    }
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

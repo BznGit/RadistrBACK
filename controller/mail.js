@@ -28,7 +28,7 @@ async function sendMail(req, res) {
       
         let mailOptions = {
           from: 'no-reply@radistr.ru', // sender address
-          to: [ /*'sales@radistr.ru'*/, 'bznkvlx@yandex.ru' ], // list of receivers
+          to: [ 'sales@radistr.ru', 'bznkvlx@yandex.ru' ], // list of receivers
           subject: 'Форма обратной связи', // Subject line
           text: 'Форма обратной связи', // plain text body
           html: `<div>Почта: ${email}</div>

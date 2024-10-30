@@ -1,0 +1,148 @@
+.header {
+	background: $header-bg;
+	position: relative;
+	height: var(--interval-60);
+	z-index: 100;
+	& > .center {
+		z-index: 2;
+	}
+	&.menu-active {
+		background: $header-bg-active;
+	}
+	.center {
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		display: flex;
+		height: 100%;
+		z-index: 3;
+	}
+	.logo {
+		margin-right: var(--interval-30);
+		position: relative;
+		margin-bottom: var(--interval-10);
+		width: calc(var(--interval-10) * 11);
+		z-index: 2;
+		.logo-link {
+			display: block;
+		}
+		.logo-icon {
+			display: block;
+			width: 100%;
+		}
+	}
+	.link {
+		position: relative;
+		display: flex;
+		z-index: 2;
+		.link-icons {
+			position: relative;
+			height: .9em;
+			width: 1.2em;
+		}
+		.link-text {
+			@include ProximaNova-Bold;
+			padding-left: .4em;
+			@include text-14;
+			color: $white;
+		}
+	}
+	.phone {
+		margin-right: var(--interval-25);
+	}
+	.login {
+		margin-right: var(--interval-25);
+	}
+	.button {
+		&.primary {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	@media screen and (max-width: 1024px) {
+		padding-right: 7vw;
+		height: 7vw;
+		.logo {
+			margin-right: 0;
+			width: 15vw;
+		}
+		.phone {
+			margin-left: auto;
+		}
+	}
+	@media screen and (max-width: 640px) {
+		padding-right: 10vw;
+		height: 15vw;
+		.logo {
+			width: 30vw;
+		}
+		.link {
+			.link-text {
+				display: none;
+			}
+		}
+		.phone {
+			margin-left: auto;
+			margin-right: 2vw;
+		}
+		.login {
+			margin-right: 2vw;
+		}
+		.button {
+			&.primary {
+				padding: 0 2vw;
+				font-size: 3vw;
+			}
+		}
+	}
+}
+.fixed {
+	.header {
+		&:before {
+			background: linear-gradient(to bottom, $header-bg-active 0%, transparent 100%);
+			position: absolute;
+			content: '';
+			height: 3vw;
+			width: 100%;
+			z-index: 4;
+			top: 100%;
+			left: 0;
+			@media screen and (max-width: 1024px) {
+				display: none;
+			}
+		}
+	}
+}
+
+@keyframes desktop-header-fix {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 60px;
+	}
+}
+@keyframes device-header-fix {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 40px;
+	}
+}
+@keyframes mobile-header-fix {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 12vw;
+	}
+}
+@keyframes header-elements-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

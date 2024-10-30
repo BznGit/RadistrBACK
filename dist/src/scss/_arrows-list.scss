@@ -1,0 +1,16 @@
+.arrows-list {
+  @include text-16;
+  .row {
+    margin-top: var(--interval-10);
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    .row-icon {
+      margin-right: var(--interval-10);
+      width: var(--interval-25);
+    }
+    .row-text {
+      width: calc(100% - var(--interval-10));
+    }
+  }
+}

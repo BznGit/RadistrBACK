@@ -1,0 +1,1892 @@
+@keyframes revenue-scheme-slide-move-slider {
+  0% {
+    transform: translateX(100%);
+  }
+  //25% {
+  //  transform: translateX(75%);
+  //}
+  //50% {
+  //  transform: translateX(50%);
+  //}
+  //75% {
+  //  transform: translateX(35%);
+  //}
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes revenue-scheme-slide-move-main {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  //6.25% {
+  //  transform: translateX(-15%);
+  //  opacity: 1;
+  //}
+  //12.5% {
+  //  transform: translateX(-50%);
+  //  opacity: 1;
+  //}
+  //18.75% {
+  //  transform: translateX(-65%);
+  //  opacity: 1;
+  //}
+  //25% {
+  //  transform: translateX(-100%);
+  //  opacity: 1;
+  //}
+  //32.25% {
+  //  transform: translateX(-115%);
+  //  opacity: 1;
+  //}
+  //38.5% {
+  //  transform: translateX(-150%);
+  //  opacity: 1;
+  //}
+  //44.75% {
+  //  transform: translateX(-165%);
+  //  opacity: 1;
+  //}
+  //50% {
+  //  transform: translateX(-200%);
+  //  opacity: 1;
+  //}
+  //56.25% {
+  //  transform: translateX(-215%);
+  //  opacity: 1;
+  //}
+  //62.5% {
+  //  transform: translateX(-250%);
+  //  opacity: 1;
+  //}
+  //68.75% {
+  //  transform: translateX(-265%);
+  //  opacity: 1;
+  //}
+  75% {
+    transform: translateX(-300%);
+    opacity: 1;
+  }
+  76% {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  99.999999999% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  99.9999999999% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes revenue-scheme-slide-fade-00 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  99.99999999% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes revenue-scheme-slide-move-fade-01 {
+  0% {
+    opacity: 1;
+  }
+  49.999999999% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes revenue-scheme-slide-move-fade-02 {
+  0% {
+    opacity: 0;
+  }
+  49.999999999% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes revenue-scheme-line-item-arrow {
+  0% {
+    transform: translateX(-50%) scale(0);
+  }
+  .2% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1);
+  }
+  51% {
+    transform: translateX(-50%) scale(0);
+  }
+  100% {
+    transform: translateX(-50%) scale(0);
+  }
+}
+
+@keyframes revenue-scheme-block-green-color {
+  0% {
+    background: #808080;
+  }
+  .5% {
+    background: #00BF02;
+  }
+  50% {
+    background: #00BF02;
+  }
+  51% {
+    background: #808080;
+  }
+  100% {
+    background: #808080;
+  }
+}
+@keyframes revenue-scheme-block-orange-color {
+  0% {
+    background: #808080;
+  }
+  .5% {
+    background: #FF8200;
+  }
+  50% {
+    background: #FF8200;
+  }
+  51% {
+    background: #808080;
+  }
+  100% {
+    background: #808080;
+  }
+}
+
+@keyframes revenue-scheme-block-yellow-center-color {
+  0% {
+    box-shadow: 0 0 0 0 #FFBF00;
+    background: #D5272D;
+  }
+  .5% {
+    box-shadow: 0 0 5px 5px #FFBF00;
+    background: #FFBF00;
+  }
+  1% {
+    box-shadow: 0 0 0 0 #FFBF00;
+    background: #FFBF00;
+  }
+  50% {
+    box-shadow: 0 0 0 0 #FFBF00;
+    background: #FFBF00;
+  }
+  51% {
+    box-shadow: 0 0 0 0 #FFBF00;
+    background: #D5272D;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #FFBF00;
+    background: #D5272D;
+  }
+}
+@keyframes revenue-scheme-block-green-center-color {
+  0% {
+    box-shadow: 0 0 0 0 #00BF02;
+    background: transparent;
+  }
+  .5% {
+    box-shadow: 0 0 5px 5px #00BF02;
+    background: #00BF02;
+  }
+  1% {
+    box-shadow: 0 0 0 0 #00BF02;
+    background: #00BF02;
+  }
+  50% {
+    box-shadow: 0 0 0 0 #00BF02;
+    background: #00BF02;
+  }
+  51% {
+    box-shadow: 0 0 0 0 #00BF02;
+    background: transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #00BF02;
+    background: transparent;
+  }
+}
+
+@keyframes revenue-scheme-line-item-tooltip-top {
+  0% {
+    opacity: 0;
+  }
+  .5% {
+    opacity: 1;
+  }
+  11% {
+    opacity: 1;
+  }
+  11.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes revenue-scheme-line-item-tooltip-bottom {
+  0% {
+    opacity: 0;
+  }
+  .5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  10.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.block {
+  &.revenue-schema.version-02 {
+    width: calc(100% + 415px);
+    position: relative;
+    overflow: hidden;
+    left: -315px;
+    .box {
+      word-break: normal;
+      &.shadow {
+        padding: 75px 0 95px;
+        position: relative;
+      }
+      &.back  {
+        position: relative;
+        z-index: 1;
+        .block-schema {
+          &:before {
+            background: linear-gradient(to right, #EDEDED 0%, #EDEDED 40%, transparent );
+            position: absolute;
+            left: -315px;
+            width: 200px;
+            height: 100%;
+            content: '';
+            z-index: 4;
+            top: 0;
+          }
+          &:after {
+            background: linear-gradient(to left, #EDEDED, transparent);
+            position: absolute;
+            right: -100px;
+            width: 100px;
+            height: 100%;
+            content: '';
+            z-index: 3;
+            top: 0;
+          }
+        }
+        .schema-overflow {
+          .slide-transform {
+            &.one {
+              .slide-01 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      .item-arrow {
+                        animation-delay: 8000ms;
+                      }
+                    }
+                    &.item-02 {
+                      .item-arrow {
+                        animation-delay: 12000ms;
+                      }
+                    }
+                    &.item-03 {
+                      .item-arrow {
+                        animation-delay: 14500ms;
+                      }
+                    }
+                    &.item-04 {
+                      .item-arrow {
+                        animation-delay: 17000ms;
+                      }
+                    }
+                    &.item-05 {
+                      .item-arrow {
+                        animation-delay: 20000ms;
+                      }
+                    }
+                  }
+                }
+              }
+              .slide-02 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      .item-arrow {
+                        animation-delay: 28500ms;
+                      }
+                    }
+                    &.item-02 {
+                      .item-arrow {
+                        animation-delay: 32000ms;
+                      }
+                    }
+                    &.item-03 {
+                      .item-arrow {
+                        animation-delay: 35000ms;
+                      }
+                    }
+                    &.item-04 {
+                      .item-arrow {
+                        animation-delay: 38000ms;
+                      }
+                    }
+                    &.item-05 {
+                      .item-arrow {
+                        animation-delay: 40000ms;
+                      }
+                    }
+                  }
+                }
+              }
+              .slide-03 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      .item-arrow {
+                        animation-delay: 48000ms;
+                      }
+                    }
+                    &.item-02 {
+                      .item-arrow {
+                        animation-delay: 52000ms;
+                      }
+                    }
+                    &.item-03 {
+                      .item-arrow {
+                        animation-delay: 55000ms;
+                      }
+                    }
+                    &.item-04 {
+                      .item-arrow {
+                        animation-delay: 57000ms;
+                      }
+                    }
+                    &.item-05 {
+                      .item-arrow {
+                        animation-delay: 61000ms;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &.two {
+              .slide-01 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      .item-arrow {
+                        animation-delay: 48000ms;
+                      }
+                    }
+                    &.item-02 {
+                      .item-arrow {
+                        animation-delay: 52000ms;
+                      }
+                    }
+                    &.item-03 {
+                      .item-arrow {
+                        animation-delay: 54000ms;
+                      }
+                    }
+                    &.item-04 {
+                      .item-arrow {
+                        animation-delay: 57000ms;
+                      }
+                    }
+                    &.item-05 {
+                      .item-arrow {
+                        animation-delay: 61000ms;
+                      }
+                    }
+                  }
+                }
+              }
+              .slide-02 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      .item-arrow {
+                        animation-delay: 68000ms;
+                      }
+                    }
+                    &.item-02 {
+                      .item-arrow {
+                        animation-delay: 72000ms;
+                      }
+                    }
+                    &.item-03 {
+                      .item-arrow {
+                        animation-delay: 74000ms;
+                      }
+                    }
+                    &.item-04 {
+                      .item-arrow {
+                        animation-delay: 77000ms;
+                      }
+                    }
+                    &.item-05 {
+                      .item-arrow {
+                        animation-delay: 81000ms;
+                      }
+                    }
+                  }
+                }
+              }
+              .slide-03 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      .item-arrow {
+                        animation-delay: 88000ms;
+                      }
+                    }
+                    &.item-02 {
+                      .item-arrow {
+                        animation-delay: 92000ms;
+                      }
+                    }
+                    &.item-03 {
+                      .item-arrow {
+                        animation-delay: 95000ms;
+                      }
+                    }
+                    &.item-04 {
+                      .item-arrow {
+                        animation-delay: 97000ms;
+                      }
+                    }
+                    &.item-05 {
+                      .item-arrow {
+                        animation-delay: 101000ms;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .schema-slide {
+            &.slide-00 {
+              .line-item {
+                .item-arrow {
+                  opacity: 1;
+                }
+              }
+            }
+            &:not(.slide-00) {
+              .line-item {
+                .item-arrow {
+                  animation-name: revenue-scheme-line-item-arrow;
+                  transform: translateX(-50%) scale(0);
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  animation-duration: 80000ms;
+                  animation-fill-mode: both;
+                }
+              }
+            }
+            .line-item {
+              &.orange {
+                background: #808080;
+              }
+              &.blue {
+                background: #808080;
+              }
+            }
+          }
+        }
+      }
+      &.front {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+        &.eng {
+          .schema-overflow {
+            .schema-slide {
+              &:not(.slide-00) {
+                .line-item {
+                  &.orange {
+                    &.item-01, &.item-04 {
+                      &:after {
+                        content: 'Payments to miners, according to the table';
+                      }
+                    }
+                    &.item-02, &.item-05 {
+                      &:before {
+                        content: 'We found a BTC block';
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .schema-overflow {
+          .slide-transform {
+            &.one {
+              .slide-01 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      animation-delay: 8500ms;
+                      .item-arrow {
+                        animation-delay: 8000ms;
+                      }
+                      &:after {
+                        animation-delay: 14000ms;
+                      }
+                    }
+                    &.item-02 {
+                      animation-delay: 12500ms;
+                      .item-arrow {
+                        animation-delay: 12000ms;
+                      }
+                      &:before {
+                        animation-delay: 13000ms;
+                      }
+                    }
+                    &.item-03 {
+                      animation-delay: 15000ms;
+                      .item-arrow {
+                        animation-delay: 14500ms;
+                      }
+                    }
+                    &.item-04 {
+                      animation-delay: 17500ms;
+                      .item-arrow {
+                        animation-delay: 17000ms;
+                      }
+                      &:after {
+                        animation-delay: 22000ms;
+                      }
+                    }
+                    &.item-05 {
+                      animation-delay: 20500ms;
+                      .item-arrow {
+                        animation-delay: 20000ms;
+                      }
+                      &:before {
+                        animation-delay: 21000ms;
+                      }
+                    }
+                  }
+                  &.blue {
+                    &.item-01, &.item-02, &.item-03, &.item-04 {
+                      &:before {
+                        animation-delay: 9000ms;
+                      }
+                      &:after {
+                        animation-delay: 13500ms;
+                      }
+                    }
+                    &.item-05, &.item-06, &.item-07, &.item-08 {
+                      &:before {
+                        animation-delay: 13500ms;
+                      }
+                      &:after {
+                        animation-delay: 21500ms;
+                      }
+                    }
+                    &.item-09, &.item-10 {
+                      &:before {
+                        animation-delay: 15500ms;
+                      }
+                      &:after {
+                        animation-delay: 21500ms;
+                      }
+                    }
+                    &.item-11, &.item-12, &.item-13 {
+                      &:before {
+                        animation-delay: 18000ms;
+                      }
+                      &:after {
+                        animation-delay: 21500ms;
+                      }
+                    }
+                    &.item-14, &.item-15, &.item-16, &.item-17 {
+                      &:before {
+                        animation-delay: 21500ms;
+                      }
+                      &:after {
+                        animation-delay: 33500ms;
+                      }
+                    }
+                    &.item-18, &.item-19, &.item-20 {
+                      &:before {
+                        animation-delay: 29500ms;
+                      }
+                      &:after {
+                        animation-delay: 33500ms;
+                      }
+                    }
+                  }
+                }
+              }
+              .slide-02 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      animation-delay: 28500ms;
+                      .item-arrow {
+                        animation-delay: 28000ms;
+                      }
+                      &:after {
+                        animation-delay: 34000ms;
+                      }
+                    }
+                    &.item-02 {
+                      animation-delay: 32500ms;
+                      .item-arrow {
+                        animation-delay: 32000ms;
+                      }
+                      &:before {
+                        animation-delay: 33000ms;
+                      }
+                    }
+                    &.item-03 {
+                      animation-delay: 36500ms;
+                      .item-arrow {
+                        animation-delay: 36000ms;
+                      }
+                    }
+                    &.item-04 {
+                      animation-delay: 38500ms;
+                      .item-arrow {
+                        animation-delay: 38000ms;
+                      }
+                      &:after {
+                        animation-delay: 42000ms;
+                      }
+                    }
+                    &.item-05 {
+                      animation-delay: 40500ms;
+                      .item-arrow {
+                        animation-delay: 40000ms;
+                      }
+                      &:before {
+                        animation-delay: 41000ms;
+                      }
+                    }
+                  }
+                  &.blue {
+                    &.item-01, &.item-02, &.item-03, &.item-04 {
+                      &:before {
+                        animation-delay: 29500ms;
+                      }
+                      &:after {
+                        animation-delay: 33500ms;
+                      }
+                    }
+                    &.item-05, &.item-06, &.item-07, &.item-08 {
+                      &:before {
+                        animation-delay: 33500ms;
+                      }
+                      &:after {
+                        animation-delay: 41500ms;
+                      }
+                    }
+                    &.item-09, &.item-10 {
+                      &:before {
+                        animation-delay: 37000ms;
+                      }
+                      &:after {
+                        animation-delay: 41500ms;
+                      }
+                    }
+                    &.item-11, &.item-12, &.item-13 {
+                      &:before {
+                        animation-delay: 39000ms;
+                      }
+                      &:after {
+                        animation-delay: 41500ms;
+                      }
+                    }
+                    &.item-14, &.item-15, &.item-16, &.item-17 {
+                      &:before {
+                        animation-delay: 41500ms;
+                      }
+                      &:after {
+                        animation-delay: 53500ms;
+                      }
+                    }
+                    &.item-18, &.item-19, &.item-20 {
+                      &:before {
+                        animation-delay: 50000ms;
+                      }
+                      &:after {
+                        animation-delay: 52500ms;
+                      }
+                    }
+                  }
+                }
+              }
+              .slide-03 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      animation-delay: 49500ms;
+                      .item-arrow {
+                        animation-delay: 49000ms;
+                      }
+                      &:after {
+                        animation-delay: 54000ms;
+                      }
+                    }
+                    &.item-02 {
+                      animation-delay: 52500ms;
+                      .item-arrow {
+                        animation-delay: 52000ms;
+                      }
+                      &:before {
+                        animation-delay: 53000ms;
+                      }
+                    }
+                    &.item-03 {
+                      animation-delay: 56500ms;
+                      .item-arrow {
+                        animation-delay: 56000ms;
+                      }
+                    }
+                    &.item-04 {
+                      animation-delay: 58500ms;
+                      .item-arrow {
+                        animation-delay: 58000ms;
+                      }
+                      &:after {
+                        animation-delay: 63000ms;
+                      }
+                    }
+                    &.item-05 {
+                      animation-delay: 61500ms;
+                      .item-arrow {
+                        animation-delay: 61000ms;
+                      }
+                      &:before {
+                        animation-delay: 62000ms;
+                      }
+                    }
+                  }
+                  &.blue {
+                    &.item-01, &.item-02, &.item-03, &.item-04 {
+                      &:before {
+                        animation-delay: 50000ms;
+                      }
+                      &:after {
+                        animation-delay: 53500ms;
+                      }
+                    }
+                    &.item-05, &.item-06, &.item-07, &.item-08 {
+                      &:before {
+                        animation-delay: 53500ms;
+                      }
+                      &:after {
+                        animation-delay: 62500ms;
+                      }
+                    }
+                    &.item-09, &.item-10 {
+                      &:before {
+                        animation-delay: 57000ms;
+                      }
+                      &:after {
+                        animation-delay: 62500ms;
+                      }
+                    }
+                    &.item-11, &.item-12, &.item-13 {
+                      &:before {
+                        animation-delay: 59000ms;
+                      }
+                      &:after {
+                        animation-delay: 62500ms;
+                      }
+                    }
+                    &.item-14, &.item-15, &.item-16, &.item-17 {
+                      &:before {
+                        animation-delay: 62500ms;
+                      }
+                      &:after {
+                        animation-delay: 62500ms;
+                      }
+                    }
+                    &.item-18, &.item-19, &.item-20 {
+                      &:before {
+                        animation-delay: 70000ms;
+                      }
+                      &:after {
+                        animation-delay: 73500ms;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &.two {
+              .slide-01 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      animation-delay: 48500ms;
+                      .item-arrow {
+                        animation-delay: 48000ms;
+                      }
+                      &:after {
+                        animation-delay: 54000ms;
+                      }
+                    }
+                    &.item-02 {
+                      animation-delay: 53000ms;
+                      .item-arrow {
+                        animation-delay: 52500ms;
+                      }
+                      &:before {
+                        animation-delay: 53000ms;
+                      }
+                    }
+                    &.item-03 {
+                      animation-delay: 54500ms;
+                      .item-arrow {
+                        animation-delay: 54000ms;
+                      }
+                    }
+                    &.item-04 {
+                      animation-delay: 57500ms;
+                      .item-arrow {
+                        animation-delay: 57000ms;
+                      }
+                      &:after {
+                        animation-delay: 63000ms;
+                      }
+                    }
+                    &.item-05 {
+                      animation-delay: 61500ms;
+                      .item-arrow {
+                        animation-delay: 61000ms;
+                      }
+                      &:before {
+                        animation-delay: 62000ms;
+                      }
+                    }
+                  }
+                  &.blue {
+                    &.item-01, &.item-02, &.item-03, &.item-04 {
+                      &:before {
+                        animation-delay: 49000ms;
+                      }
+                      &:after {
+                        animation-delay: 53500ms;
+                      }
+                    }
+                    &.item-05, &.item-06, &.item-07, &.item-08 {
+                      &:before {
+                        animation-delay: 53500ms;
+                      }
+                      &:after {
+                        animation-delay: 62500ms;
+                      }
+                    }
+                    &.item-09, &.item-10 {
+                      &:before {
+                        animation-delay: 55000ms;
+                      }
+                      &:after {
+                        animation-delay: 62500ms;
+                      }
+                    }
+                    &.item-11, &.item-12, &.item-13 {
+                      &:before {
+                        animation-delay: 58000ms;
+                      }
+                      &:after {
+                        animation-delay: 62500ms;
+                      }
+                    }
+                    &.item-14, &.item-15, &.item-16, &.item-17 {
+                      &:before {
+                        animation-delay: 62500ms;
+                      }
+                      &:after {
+                        animation-delay: 73500ms;
+                      }
+                    }
+                    &.item-18, &.item-19, &.item-20 {
+                      &:before {
+                        animation-delay: 70000ms;
+                      }
+                      &:after {
+                        animation-delay: 73500ms;
+                      }
+                    }
+                  }
+                }
+              }
+              .slide-02 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      animation-delay: 69500ms;
+                      .item-arrow {
+                        animation-delay: 69000ms;
+                      }
+                      &:after {
+                        animation-delay: 74000ms;
+                      }
+                    }
+                    &.item-02 {
+                      animation-delay: 72500ms;
+                      .item-arrow {
+                        animation-delay: 72000ms;
+                      }
+                      &:before {
+                        animation-delay: 73000ms;
+                      }
+                    }
+                    &.item-03 {
+                      animation-delay: 75500ms;
+                      .item-arrow {
+                        animation-delay: 75000ms;
+                      }
+                    }
+                    &.item-04 {
+                      animation-delay: 78500ms;
+                      .item-arrow {
+                        animation-delay: 78000ms;
+                      }
+                      &:after {
+                        animation-delay: 83000ms;
+                      }
+                    }
+                    &.item-05 {
+                      animation-delay: 81500ms;
+                      .item-arrow {
+                        animation-delay: 81000ms;
+                      }
+                      &:before {
+                        animation-delay: 82000ms;
+                      }
+                    }
+                  }
+                  &.blue {
+                    &.item-01, &.item-02, &.item-03, &.item-04 {
+                      &:before {
+                        animation-delay: 70000ms;
+                      }
+                      &:after {
+                        animation-delay: 73500ms;
+                      }
+                    }
+                    &.item-05, &.item-06, &.item-07, &.item-08 {
+                      &:before {
+                        animation-delay: 73500ms;
+                      }
+                      &:after {
+                        animation-delay: 82500ms;
+                      }
+                    }
+                    &.item-09, &.item-10 {
+                      &:before {
+                        animation-delay: 76000ms;
+                      }
+                      &:after {
+                        animation-delay: 82500ms;
+                      }
+                    }
+                    &.item-11, &.item-12, &.item-13 {
+                      &:before {
+                        animation-delay: 79000ms;
+                      }
+                      &:after {
+                        animation-delay: 82500ms;
+                      }
+                    }
+                    &.item-14, &.item-15, &.item-16, &.item-17 {
+                      &:before {
+                        animation-delay: 82500ms;
+                      }
+                      &:after {
+                        animation-delay: 93500ms;
+                      }
+                    }
+                    &.item-18, &.item-19, &.item-20 {
+                      &:before {
+                        animation-delay: 90000ms;
+                      }
+                      &:after {
+                        animation-delay: 93500ms;
+                      }
+                    }
+                  }
+                }
+              }
+              .slide-03 {
+                .line-item {
+                  &.orange {
+                    &.item-01 {
+                      animation-delay: 89500ms;
+                      .item-arrow {
+                        animation-delay: 89000ms;
+                      }
+                      &:after {
+                        animation-delay: 94000ms;
+                      }
+                    }
+                    &.item-02 {
+                      animation-delay: 92500ms;
+                      .item-arrow {
+                        animation-delay: 92000ms;
+                      }
+                      &:before {
+                        animation-delay: 93000ms;
+                      }
+                    }
+                    &.item-03 {
+                      animation-delay: 96500ms;
+                      .item-arrow {
+                        animation-delay: 96000ms;
+                      }
+                    }
+                    &.item-04 {
+                      animation-delay: 98500ms;
+                      .item-arrow {
+                        animation-delay: 98000ms;
+                      }
+                      &:after {
+                        animation-delay: 103000ms;
+                      }
+                    }
+                    &.item-05 {
+                      animation-delay: 101500ms;
+                      .item-arrow {
+                        animation-delay: 101000ms;
+                      }
+                      &:before {
+                        animation-delay: 102000ms;
+                      }
+                    }
+                  }
+                  &.blue {
+                    &.item-01, &.item-02, &.item-03, &.item-04 {
+                      &:before {
+                        animation-delay: 90000ms;
+                      }
+                      &:after {
+                        animation-delay: 93500ms;
+                      }
+                    }
+                    &.item-05, &.item-06, &.item-07, &.item-08 {
+                      &:before {
+                        animation-delay: 93500ms;
+                      }
+                      &:after {
+                        animation-delay: 102500ms;
+                      }
+                    }
+                    &.item-09, &.item-10 {
+                      &:before {
+                        animation-delay: 97000ms;
+                      }
+                      &:after {
+                        animation-delay: 102500ms;
+                      }
+                    }
+                    &.item-11, &.item-12, &.item-13 {
+                      &:before {
+                        animation-delay: 99000ms;
+                      }
+                      &:after {
+                        animation-delay: 102500ms;
+                      }
+                    }
+                    &.item-14, &.item-15, &.item-16, &.item-17 {
+                      &:before {
+                        animation-delay: 102500ms;
+                      }
+                      &:after {
+                        animation-delay: 102500ms;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .schema-slide {
+            &.slide-00 {
+              .line-item {
+                .item-arrow {
+                  opacity: 1;
+                }
+                &.orange {
+                  background: #FF8200;
+                  &.item-02, &.item-05 {
+                    background: #00BF02;
+                  }
+                  &.item-05 {
+                    //&:before {
+                    //  animation-name: revenue-scheme-line-item-tooltip-top;
+                    //  animation-iteration-count: infinite;
+                    //  animation-timing-function: linear;
+                    //  content: 'мы нашли блок BTC';
+                    //  animation-duration: 60000ms;
+                    //  transform: translateX(-50%);
+                    //  animation-fill-mode: both;
+                    //  white-space: normal;
+                    //  position: absolute;
+                    //  text-align: center;
+                    //  font-size: 14px;
+                    //  color: #00BF02;
+                    //  bottom: 110%;
+                    //  width: 80px;
+                    //  left: 50%;
+                    //}
+                    //&:after {
+                    //  animation-name: revenue-scheme-line-item-tooltip-bottom;
+                    //  content: 'выплаты майнерам согласно таблице';
+                    //  animation-iteration-count: infinite;
+                    //  animation-timing-function: linear;
+                    //  animation-duration: 60000ms;
+                    //  animation-fill-mode: both;
+                    //  white-space: normal;
+                    //  position: absolute;
+                    //  text-align: center;
+                    //  font-size: 14px;
+                    //  color: #00BF02;
+                    //  width: 170px;
+                    //  right: 50%;
+                    //  top: 310%;
+                    //}
+                  }
+                }
+                &.blue {
+                  background: $blue;
+                  &:after{
+                    background: #00BF02;
+                    position: absolute;
+                    content: '';
+                    height: 60%;
+                    width: 60%;
+                    z-index: 2;
+                    left: 20%;
+                    top: 20%;
+                  }
+                  &.item-14, &.item-15, &.item-16, &.item-17 {
+                    &:before {
+                      animation-name: revenue-scheme-block-yellow-center-color;
+                      animation-iteration-count: infinite;
+                      animation-timing-function: linear;
+                      animation-duration: 100000ms;
+                      animation-fill-mode: both;
+                      background: #FF0000;
+                      position: absolute;
+                      content: '';
+                      height: 60%;
+                      width: 60%;
+                      z-index: 1;
+                      left: 20%;
+                      top: 20%;
+                    }
+                    &:after{
+                      animation-name: revenue-scheme-block-green-center-color;
+                      animation-iteration-count: infinite;
+                      animation-timing-function: linear;
+                      animation-duration: 100000ms;
+                      animation-fill-mode: both;
+                      animation-delay: 13500ms;
+                      background: transparent;
+                      position: absolute;
+                      content: '';
+                      height: 60%;
+                      width: 60%;
+                      z-index: 2;
+                      left: 20%;
+                      top: 20%;
+                    }
+                  }
+                  &.item-18, &.item-19, &.item-20 {
+                    &:before {
+                      animation-name: revenue-scheme-block-yellow-center-color;
+                      animation-iteration-count: infinite;
+                      animation-timing-function: linear;
+                      animation-duration: 100000ms;
+                      animation-fill-mode: both;
+                      animation-delay: 9000ms;
+                      background: #FF0000;
+                      position: absolute;
+                      content: '';
+                      height: 60%;
+                      width: 60%;
+                      z-index: 1;
+                      left: 20%;
+                      top: 20%;
+                    }
+                    &:after{
+                      animation-name: revenue-scheme-block-green-center-color;
+                      animation-iteration-count: infinite;
+                      animation-timing-function: linear;
+                      animation-duration: 100000ms;
+                      animation-fill-mode: both;
+                      animation-delay: 13500ms;
+                      background: transparent;
+                      position: absolute;
+                      content: '';
+                      height: 60%;
+                      width: 60%;
+                      z-index: 2;
+                      left: 20%;
+                      top: 20%;
+                    }
+                  }
+                }
+              }
+            }
+            &:not(.slide-00) {
+              .line-item {
+                .item-arrow {
+                  animation-name: revenue-scheme-line-item-arrow;
+                  transform: translateX(-50%) scale(0);
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  animation-duration: 40000ms;
+                  animation-fill-mode: backwards;
+                }
+                &.orange {
+                  animation-name: revenue-scheme-block-orange-color;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  animation-duration: 40000ms;
+                  animation-fill-mode: backwards;
+                  word-break: normal;
+                  &.item-01, &.item-03, &.item-04 {
+                    animation-name: revenue-scheme-block-orange-color;
+                  }
+                  &.item-01, &.item-04 {
+                    &:after {
+                      animation-name: revenue-scheme-line-item-tooltip-bottom;
+                      content: 'выплаты майнерам согласно таблице';
+                      animation-iteration-count: infinite;
+                      animation-timing-function: linear;
+                      animation-duration: 40000ms;
+                      animation-fill-mode: backwards;
+                      white-space: normal;
+                      position: absolute;
+                      text-align: center;
+                      font-size: 14px;
+                      display: block;
+                      color: #00BF02;
+                      width: 170px;
+                      right: 50%;
+                      top: 310%;
+                    }
+                  }
+                  &.item-02, &.item-05 {
+                    animation-name: revenue-scheme-block-green-color;
+                    &:before {
+                      animation-name: revenue-scheme-line-item-tooltip-top;
+                      animation-iteration-count: infinite;
+                      animation-timing-function: linear;
+                      content: 'мы нашли блок BTC';
+                      animation-duration: 40000ms;
+                      transform: translateX(-50%);
+                      animation-fill-mode: backwards;
+                      white-space: normal;
+                      position: absolute;
+                      text-align: center;
+                      font-size: 14px;
+                      display: block;
+                      color: #00BF02;
+                      bottom: 110%;
+                      width: 80px;
+                      left: 50%;
+                    }
+                    @media screen and (max-width: 640px) {
+                      &:before {
+                        font-size: 2.5vw;
+                        line-height: 1.2;
+                        width: 13vw;
+                      }
+                      &:after {
+                        font-size: 2.5vw;
+                        line-height: 1.2;
+                        width: 27vw;
+                        top: 280%;
+                      }
+                    }
+                  }
+                }
+                &.blue {
+                  background: $blue;
+                  &:before {
+                    animation-name: revenue-scheme-block-yellow-center-color;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                    animation-duration: 40000ms;
+                    animation-fill-mode: backwards;
+                    background: #FF0000;
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    height: 60%;
+                    width: 60%;
+                    z-index: 1;
+                    left: 20%;
+                    top: 20%;
+                  }
+                  &:after{
+                    animation-name: revenue-scheme-block-green-center-color;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                    animation-duration: 40000ms;
+                    animation-fill-mode: backwards;
+                    background: #FF0000;
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    height: 60%;
+                    width: 60%;
+                    z-index: 2;
+                    left: 20%;
+                    top: 20%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .schema-align {
+      margin-left: 315px;
+      margin-right: 100px;
+      position: relative;
+    }
+    .schema-name {
+      position: absolute;
+      font-size: 14px;
+      width: 100px;
+      left: -207px;
+      z-index: 4;
+      &.orange {
+        top: 32px;
+      }
+      &.blue {
+        top: 250px;
+      }
+    }
+    .schema-logo {
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      position: absolute;
+      display: flex;
+      left: -210px;
+      height: 75px;
+      width: 75px;
+      z-index: 4;
+      img {
+        display: block;
+        width: 55%;
+      }
+      &.orange {
+        background: #FF8200;
+        top: 60px;
+      }
+      &.blue {
+        background: $blue;
+        top: 162px;
+      }
+    }
+    .schema-time {
+      position: relative;
+      .time-item {
+        white-space: nowrap;
+        position: absolute;
+        @include text-16;
+        color: $grey-7f;
+        top: 10px;
+        &.past {
+          right: calc(100% + 10px);
+        }
+        &.now {
+          right: 10px;
+        }
+        &.future {
+          left: calc(100% + 10px);
+        }
+      }
+    }
+    .schema-week {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      .week-item {
+        width: calc(100% / 7);
+        padding-bottom: 5px;
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        color: $grey-7f;
+        &:after {
+          background: $grey-7f;
+          position: absolute;
+          right: -.5px;
+          content: '';
+          height: 5px;
+          width: 1px;
+          bottom: 0;
+        }
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+    .schema-legend {
+      margin-left: 315px;
+      position: relative;
+      padding-top: 30px;
+      .legend-item {
+        margin-bottom: 5px;
+        align-items: center;
+        display: flex;
+        .item-icon {
+          margin-right: 10px;
+          height: 15px;
+          width: 15px;
+          &.red {
+            background: #FF0000;
+          }
+          &.green {
+            background: #00BF02;
+          }
+          &.yellow {
+            background: #FFBF00;
+          }
+        }
+        .item-text {
+          @include text-16;
+          color: $grey-7f;
+        }
+      }
+    }
+    .block-schema {
+      position: relative;
+      .schema-overflow {
+        width: calc(100% + 220px);
+        position: relative;
+        height: 140px;
+        left: -120px;
+        z-index: 3;
+        .schema-slider {
+          animation-name: revenue-scheme-slide-move-slider;
+          animation-timing-function: linear;
+          transform: translateX(100%);
+          animation-duration: 20000ms;
+          animation-fill-mode: both;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+        }
+        .slide-transform {
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-duration: 80000ms;
+          animation-fill-mode: both;
+          transform: translateX(0);
+          white-space: nowrap;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          &.one {
+            animation-name: revenue-scheme-slide-move-main;
+            animation-delay: 20000ms;
+            .slide-01 {
+              animation-name: revenue-scheme-slide-move-fade-01;
+              opacity: 1;
+            }
+            .slide-03 {
+              animation-name: revenue-scheme-slide-move-fade-01;
+              opacity: 1;
+            }
+          }
+          &.two {
+            animation-name: revenue-scheme-slide-move-main;
+            animation-delay: 60000ms;
+            .slide-01 {
+              animation-name: revenue-scheme-slide-move-fade-02;
+              opacity: 0;
+            }
+            .slide-03 {
+              animation-name: revenue-scheme-slide-move-fade-02;
+              opacity: 0;
+            }
+          }
+        }
+        .schema-slide {
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-duration: 80000ms;
+          animation-fill-mode: both;
+          animation-delay: 20000ms;
+          display: inline-block;
+          position: relative;
+          height: 100%;
+          width: 100%;
+          &.slide-00 {
+            animation-name: revenue-scheme-slide-fade-00;
+            animation-iteration-count: 1;
+            transform: translateX(-100%);
+            position: absolute;
+          }
+          .line-item {
+            position: absolute;
+            z-index: 2;
+            .item-arrow {
+              transform: translateX(-50%);
+              position: absolute;
+              top: 100%;
+              left: 50%;
+            }
+            &.orange {
+              height: 50px;
+              width: 50px;
+              top: 0;
+              &.item-01 {
+                left: 19%;
+              }
+              &.item-02 {
+                left: 39%;
+              }
+              &.item-03 {
+                left: 49%;
+              }
+              &.item-04 {
+                left: 64%;
+              }
+              &.item-05 {
+                left: 84%;
+              }
+            }
+            &.blue {
+              height: 30px;
+              width: 30px;
+              bottom: 0;
+              &.item-01 {
+                left: 5%;
+              }
+              &.item-02 {
+                left: 10%;
+              }
+              &.item-03 {
+                left: 15%;
+              }
+              &.item-04 {
+                left: 20%;
+              }
+              &.item-05 {
+                left: 25%;
+              }
+              &.item-06 {
+                left: 30%;
+              }
+              &.item-07 {
+                left: 35%;
+              }
+              &.item-08 {
+                left: 40%;
+              }
+              &.item-09 {
+                left: 45%;
+              }
+              &.item-10 {
+                left: 50%;
+              }
+              &.item-11 {
+                left: 55%;
+              }
+              &.item-12 {
+                left: 60%;
+              }
+              &.item-13 {
+                left: 65%;
+              }
+              &.item-14 {
+                left: 70%;
+              }
+              &.item-15 {
+                left: 75%;
+              }
+              &.item-16 {
+                left: 80%;
+              }
+              &.item-17 {
+                left: 85%;
+              }
+              &.item-18 {
+                left: 90%;
+              }
+              &.item-19 {
+                left: 95%;
+              }
+              &.item-20 {
+                left: 100%;
+              }
+            }
+          }
+        }
+      }
+      .schema-line {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        z-index: 1;
+        &:before {
+          position: absolute;
+          width: 1000px;
+          height: 100%;
+          content: '';
+          z-index: 3;
+          right: 100%;
+          top: 0;
+        }
+        &:after {
+          border-top: 4px dashed #808080;
+          position: absolute;
+          width: 100px;
+          height: 100%;
+          content: '';
+          z-index: 3;
+          left: 100%;
+          top: 0;
+        }
+        &.orange {
+          background: #FF8200;
+          top: 23px;
+          &:before {
+            background: #FF8200;
+          }
+        }
+        &.blue {
+          background: $blue;
+          top: 124px;
+          &:before {
+            background: $blue;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 1750px) {
+      .schema-name {
+        &.orange {
+          left: 260px;
+          top: 45px;
+        }
+        &.blue {
+          left: 610px;
+          top: 45px;
+        }
+      }
+      .schema-logo {
+        height: 50px;
+        width: 50px;
+        &.orange {
+          left: 200px;
+          top: 30px;
+        }
+        &.blue {
+          left: 550px;
+          top: 30px;
+        }
+      }
+      .box {
+        &.shadow {
+          padding: 150px 0 95px;
+        }
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      .schema-name {
+        &.orange {
+          left: calc(20% + 60px);
+          top: 45px;
+        }
+        &.blue {
+          left: calc(60% + 60px);
+          top: 45px;
+        }
+      }
+      .schema-logo {
+        height: 50px;
+        width: 50px;
+        &.orange {
+          left: 20%;
+          top: 30px;
+        }
+        &.blue {
+          left: 60%;
+          top: 30px;
+        }
+      }
+      .schema-time {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      .box {
+        &.shadow {
+          padding: 25vw 0 15vw;
+        }
+      }
+      .schema-name {
+        font-size: 4vw;
+        width: auto;
+        &.orange {
+          top: 8vw;
+          left: 18vw;
+        }
+        &.blue {
+          left: calc(57% + 12vw);
+          top: 8vw;
+        }
+      }
+      .schema-logo {
+        height: 10vw;
+        width: 10vw;
+        &.orange {
+          top: 6vw;
+          left: 6vw;
+        }
+        &.blue {
+          top: 6vw;
+          left: 57%;
+        }
+      }
+      .schema-week {
+        .week-item {
+          padding-bottom: .5vw;
+          font-size: 2vw;
+        }
+      }
+      .schema-legend {
+        .legend-item {
+          margin-bottom: 1vw;
+          .item-icon {
+            margin-right: 3vw;
+            height: 3vw;
+            width: 3vw;
+          }
+        }
+      }
+      .block-schema {
+        .schema-overflow {
+          height: 20.7vw;
+          width: 100vw;
+          left: -6vw;
+          &:before, &:after {
+            width: 6vw;
+          }
+          .schema-slide {
+            .line-item {
+              &.orange {
+                height: 8vw;
+                width: 8vw;
+                &.item-01 {
+                  left: 18%;
+                }
+                &.item-02 {
+                  left: 38%;
+                }
+                &.item-03 {
+                  left: 48%;
+                }
+                &.item-04 {
+                  left: 63%;
+                }
+                &.item-05 {
+                  left: 83%;
+                }
+              }
+              &.blue {
+                height: 4vw;
+                width: 4vw;
+              }
+              .item-arrow {
+                height: 8.7vw;
+              }
+            }
+            &:not(.slide-00) {
+              .line-item {
+                &.orange {
+                  &:before {
+                    font-size: 2vw;
+                  }
+                  &:after {
+                    font-size: 2vw;
+                    width: 25vw;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .schema-line {
+          height: 1vw;
+          &:after {
+            border-top: 1vw dashed #808080;
+          }
+          &.orange {
+            top: 3.5vw;
+          }
+          &.blue {
+            top: 18.2vw;
+          }
+        }
+      }
+    }
+  }
+}

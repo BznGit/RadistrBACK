@@ -1,0 +1,263 @@
+@mixin ProximaNova-Bold {
+	font-family: 'ProximaNova-Bold';
+}
+@mixin ProximaNova-Regular {
+	font-family: 'ProximaNova-Regular';
+}
+
+
+@mixin text-12 {
+	font-size: 12px;
+	@media screen and (max-width: 1366px) {
+		font-size: .87vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 1.3vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 2.5vw;
+	}
+}
+@mixin text-13 {
+	font-size: 13px;
+	@media screen and (max-width: 1366px) {
+		font-size: .95vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 1.42vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 2.5vw;
+	}
+}
+@mixin text-14 {
+	font-size: 14px;
+	@media screen and (max-width: 1366px) {
+		font-size: 1.02vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 1.53vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 3vw;
+	}
+}
+@mixin text-15 {
+	font-size: 15px;
+	@media screen and (max-width: 1366px) {
+		font-size: 1.09vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 1.63vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 3.3vw;
+	}
+}
+@mixin text-16 {
+	font-size: 16px;
+	@media screen and (max-width: 1366px) {
+		font-size: 1.17vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 1.75vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 4vw;
+	}
+}
+@mixin text-17 {
+	font-size: 17px;
+	@media screen and (max-width: 1366px) {
+		font-size: 1.24vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 1.86vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 4vw;
+	}
+}
+@mixin text-18 {
+	font-size: 18px;
+	@media screen and (max-width: 1366px) {
+		font-size: 1.31vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 1.96vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 4vw;
+	}
+}
+@mixin text-20 {
+	font-size: 20px;
+	@media screen and (max-width: 1366px) {
+		font-size: 1.46vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 2.19vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 4.5vw;
+	}
+}
+@mixin text-22 {
+	font-size: 22px;
+	@media screen and (max-width: 1366px) {
+		font-size: 1.61vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 2.41vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 5vw;
+	}
+}
+@mixin text-25 {
+	font-size: 25px;
+	@media screen and (max-width: 1366px) {
+		font-size: 1.83vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 2.74vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 5vw;
+	}
+}
+@mixin text-26 {
+	font-size: 26px;
+	@media screen and (max-width: 1366px) {
+		font-size: 1.9vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 2.85vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 5vw;
+	}
+}
+@mixin text-30 {
+	font-size: 30px;
+	@media screen and (max-width: 1366px) {
+		font-size: 2.19vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 3.28vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 5.5vw;
+	}
+}
+@mixin text-36 {
+	font-size: 36px;
+	@media screen and (max-width: 1366px) {
+		font-size: 2.63vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 3.94vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 5.5vw;
+	}
+}
+@mixin text-40 {
+	font-size: 40px;
+	@media screen and (max-width: 1366px) {
+		font-size: 2.92vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 4.38vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 9vw;
+	}
+}
+@mixin text-50 {
+	font-size: 50px;
+	@media screen and (max-width: 1366px) {
+		font-size: 3.82vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 5.73vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 9vw;
+	}
+}
+@mixin text-58 {
+	font-size: 58px;
+	@media screen and (max-width: 1366px) {
+		font-size: 4.24vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 6.36vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 9vw;
+	}
+}
+@mixin text-60 {
+	font-size: 58px;
+	@media screen and (max-width: 1366px) {
+		font-size: 4.39vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 6.58vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 11vw;
+	}
+}
+@mixin text-68 {
+	font-size: 68px;
+	@media screen and (max-width: 1366px) {
+		font-size: 4.97vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 7.45vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 11vw;
+	}
+}
+@mixin text-75 {
+	font-size: 75px;
+	@media screen and (max-width: 1366px) {
+		font-size: 5.49vw;
+	}
+	@media screen and (max-width: 1024px) {
+		font-size: 8.23vw;
+	}
+	@media screen and (max-width: 640px) {
+		font-size: 12vw;
+	}
+}
+
+@mixin img-block {
+	display: block;
+	width: 100%;
+}
+
+@mixin primary-animation {
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-duration: 400ms;
+}
+
+.img-shadow {
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.border-rotate {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: border-rotate;
+    animation-duration: 5000ms;
+    animation-fill-mode: both;
+}
+
+.bold {
+	@include ProximaNova-Bold;
+}

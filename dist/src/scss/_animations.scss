@@ -1,0 +1,121 @@
+@keyframes mobile-menu-fade {
+ 0% {
+   opacity: 0;
+ }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mobile-menu-move {
+  0% {
+    top: -150vh;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 15vw;
+  }
+}
+
+@keyframes desktop-menu-blur {
+  0% {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    top: 15vw;
+  }
+}
+
+@keyframes primary-fade-scale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes primary-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes primary-move-up {
+  0% {
+    transform: translateY(10vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes primary-move-right {
+  0% {
+    transform: translateX(10vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes primary-move-left {
+  0% {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.animated {
+  &.module {
+    .module-title {
+      animation-timing-function: ease-out;
+      animation-iteration-count: 1;
+      transform: translateY(10vw);
+      animation-fill-mode: both;
+      animation-duration: .5s;
+      opacity: 0;
+    }
+    .module-text {
+      animation-timing-function: ease-out;
+      animation-iteration-count: 1;
+      transform: translateY(10vw);
+      animation-fill-mode: both;
+      animation-duration: .5s;
+      opacity: 0;
+    }
+  }
+  .box {
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-duration: .5s;
+    opacity: 0;
+  }
+  .link-wrap {
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-duration: .5s;
+    opacity: 0;
+  }
+  .block-text {
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-duration: .5s;
+    opacity: 0;
+  }
+}

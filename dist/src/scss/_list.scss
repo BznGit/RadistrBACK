@@ -1,0 +1,26 @@
+.list {
+	&.check-mark {
+		.list-item {
+			margin-bottom: 10px;
+			margin-left: 1.6em;
+			position: relative;
+			color: $black;
+			&:before {
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: absolute;
+				height: 0.7em;
+				width: 1em;
+				left: -1.6em;
+				top: 0.3em;
+				content: '';
+			}
+		}
+		@media screen and (max-width: 640px) {
+			.list-item {
+				margin-bottom: 1.5vw;
+			}
+		}
+
+	}
+}

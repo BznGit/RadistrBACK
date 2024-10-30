@@ -1,0 +1,110 @@
+.block-mission {
+  border-radius: var(--interval-15);
+  padding: var(--interval-50) var(--interval-60);
+  margin-bottom: var(--interval-20);
+  background: $mission-bg;
+  position: relative;
+  overflow: hidden;
+  height: calc(var(--interval-100) * 5);
+  .mission-text {
+    position: relative;
+    z-index: 10;
+    width: 50%;
+    .title {
+      background: $blue;
+      background: linear-gradient(to right, $blue 0%, $green 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include ProximaNova-Bold;
+      margin-bottom: var(--interval-15);
+      display: inline-block;
+      line-height: 1;
+      @include text-68;
+    }
+    .text {
+      margin-bottom: var(--interval-25);
+      @include text-22;
+      .marker {
+        position: relative;
+        span {
+          position: relative;
+          color: $white;
+          z-index: 2;
+        }
+        img {
+          position: absolute;
+          z-index: 1;
+          width: 110%;
+          left: -5%;
+        }
+      }
+    }
+  }
+  .mission-image {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-top: 19.6%;
+    display: flex;
+    bottom: 4.9%;
+    right: 8.4%;
+    width: 19.6%;
+    .image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      &.image-mission {
+        width: 100%;
+        z-index: 4;
+      }
+      &.image-arrow{
+        transform: translate(85%, -82%);
+        width: 66%;
+        z-index: 5;
+      }
+    }
+    .circle {
+      border-radius: 100%;
+      position: absolute;
+      &.circle-01 {
+        background: #AAC9FF;
+        height: 156%;
+        width: 156%;
+        left: -27%;
+        top: -27%;
+        z-index: 3;
+      }
+      &.circle-02 {
+        background: #CFE0FF;
+        height: 234%;
+        width: 234%;
+        left: -66%;
+        top: -66%;
+        z-index: 2;
+      }
+      &.circle-03 {
+        background: #DBE8FF;
+        height: 312%;
+        width: 312%;
+        left: -105%;
+        top: -105%;
+        z-index: 1;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .mission-text {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    padding: 6vw 6vw 60vw;
+    height: auto;
+    .mission-image {
+      padding-top: 50%;
+      bottom: 2%;
+      right: 25%;
+      width: 50%;
+    }
+  }
+}
