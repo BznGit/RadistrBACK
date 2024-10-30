@@ -138,19 +138,46 @@ buttons.forEach(button => {
 
 
 // Находим все кнопки в корзине
-const cartButtons = document.querySelectorAll('.table-row .cart-button');
+const cartButtons = document.querySelectorAll('.row .cart-button');
+const cartButton = document.querySelector('.box .cart-button');
 const popupWrapper = document.querySelector('.popup-wrapper');
 
 
-cartButtons.forEach(button => {
-    button.addEventListener('click', function() {
+if(cartButtons) {
+    cartButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Находим родительский элемент .table-row
+            const tableRow = this.closest('.table-row');
+
+            // Получаем название продукта
+            const productName = tableRow.querySelector('.row-title .name').textContent;
+            // Добавляем класс active к .popup-wrapper
+
+            console.log('press>>', popupWrapper)
+            popupWrapper.classList.add('active');
+
+            // Вставляем название продукта в .popup-wrapper .product
+            const popupProduct = document.querySelector('.popup-wrapper .product');
+            popupProduct.textContent = productName;
+            const textarea = popupWrapper.querySelector('textarea');
+
+            textarea.value = 'Здравствуйте, хочу заказать ' + productName
+
+        });
+    });
+}
+
+
+if(cartButton) {
+    cartButton.addEventListener('click', function() {
+
         // Находим родительский элемент .table-row
-        const tableRow = this.closest('.table-row');
-    
+        const productBox = this.closest('.box');
+
         // Получаем название продукта
-        const productName = tableRow.querySelector('.row-title .name').textContent;
+        const productName = productBox.querySelector('.box-title').textContent;
         // Добавляем класс active к .popup-wrapper
-       
+
         console.log('press>>', popupWrapper)
         popupWrapper.classList.add('active');
 
@@ -158,11 +185,11 @@ cartButtons.forEach(button => {
         const popupProduct = document.querySelector('.popup-wrapper .product');
         popupProduct.textContent = productName;
         const textarea = popupWrapper.querySelector('textarea');
-   
-        textarea.value = 'Здравствуйте, хочу заказать ' + productName 
+
+        textarea.value = 'Здравствуйте, хочу заказать ' + productName
 
     });
-});
+}
 
 // Находим кнопку закрытия попапа
 const popupClose = document.querySelector('.popup-wrapper .popup-close');
