@@ -36,7 +36,7 @@ function validateForm() {
         isValid = validateField(input) && isValid;
     });
     isValid = validateCheckbox(checkbox) && isValid;
-		return isValid
+    return isValid
 }
 
 // Обработчики событий 'focus' для всех полей ввода
@@ -54,41 +54,39 @@ checkbox.addEventListener('change', () => {
 // Обработчик события 'submit' для формы
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-	
+
     // Проверяем, все ли поля валидны
     if (validateForm()) {
         // Отправка формы
         const form  = document.getElementById('formId')
         const data = new FormData(form);
-	    console.log('--- new>', data)
+        console.log('--- new>', data)
         const sending = document.getElementById('sendingId')
         const sended = document.getElementById('sendedId')
-        form.style.display = 'none'
-        sending.style.display = 'block'
-       fetch('/mail', 
-		{
-            method: 'POST',  
-            body: data
-        })
-        .then(response=> {return response.json()}).then(res=>{
+        form.classList.add('sending');
+        fetch('/mail',
+            {
+                method: 'POST',
+                body: data
+            })
+            .then(response=> {return response.json()}).then(res=>{
             console.log('res>', res)
-			if(res.captcha){
-				
-				alert('Форма успешно отправлена!');
-                sending.style.display = 'none'
-                sended.style.display = 'block'
-			}else {
-                form.style.display = 'block'
+            if(res.captcha){
+
+                alert('Форма успешно отправлена!');
+                form.classList.add('sent');
+            }else {
+                form.classList.remove('sent');
                 alert('Подтвердите что вы не робот')
-                  form.style.display = 'block'
+                form.classList.remove('sent');
             }
             // Обработка ответа сервера
-     
-        })
-        .catch(error => {
-            console.error('Ошибка отправки формы:', error);
 
-        });
+        })
+            .catch(error => {
+                console.error('Ошибка отправки формы:', error);
+
+            });
     }
 });
 //https://formspree.io/f/korvinfara@gmail.com
