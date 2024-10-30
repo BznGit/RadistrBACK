@@ -140,7 +140,7 @@ buttons.forEach(button => {
 // Находим все кнопки в корзине
 const cartButtons = document.querySelectorAll('.table-row .cart-button');
 const popupWrapper = document.querySelector('.popup-wrapper');
-
+//edededededed
 cartButtons.forEach(button => {
     button.addEventListener('click', function() {
         // Находим родительский элемент .table-row
