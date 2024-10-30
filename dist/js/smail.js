@@ -73,12 +73,13 @@ form.addEventListener('submit', (event) => {
             console.log('res>', res)
             if(res.captcha){
 
-                alert('Форма успешно отправлена!');
+               // alert('Форма успешно отправлена!');
                 form.classList.add('sent');
             }else {
                 form.classList.remove('sent');
-                alert('Подтвердите что вы не робот')
-                form.classList.remove('sent');
+                //alert('Подтвердите что вы не робот')
+                form.classList.remove('sending');
+                
             }
             // Обработка ответа сервера
 

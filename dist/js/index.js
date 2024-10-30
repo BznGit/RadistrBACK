@@ -138,10 +138,9 @@ buttons.forEach(button => {
 
 
 // Находим все кнопки в корзине
-const cartButtons = document.querySelectorAll('.row .cart-button');
+const cartButtons = document.querySelectorAll('.cart-button');
 const cartButton = document.querySelector('.box .cart-button');
 const popupWrapper = document.querySelector('.popup-wrapper');
-
 
 if(cartButtons) {
     cartButtons.forEach(button => {
@@ -153,7 +152,6 @@ if(cartButtons) {
             const productName = tableRow.querySelector('.row-title .name').textContent;
             // Добавляем класс active к .popup-wrapper
 
-            console.log('press>>', popupWrapper)
             popupWrapper.classList.add('active');
 
             // Вставляем название продукта в .popup-wrapper .product
