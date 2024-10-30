@@ -157,6 +157,9 @@ cartButtons.forEach(button => {
         // Вставляем название продукта в .popup-wrapper .product
         const popupProduct = document.querySelector('.popup-wrapper .product');
         popupProduct.textContent = productName;
+        const textarea = popupWrapper.querySelector('textarea');
+   
+        textarea.value = 'Здравствуйте, хочу заказать ' + productName 
 
     });
 });

@@ -24,6 +24,7 @@
 
 
     <link rel="stylesheet" href="/dist/style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Виртуальные серверы (VDS/VPS) - Radistr</title>
 
 </head>
@@ -1236,20 +1237,22 @@
                 <img src="/svg/close_k.svg"/>
             </div>
             <div class="title"></div>
+            <div class="message" style="display: none" id="sendingId" >Письмо отправляется...</div>
+            <div class="message" style="display: none" id="sendedId">Спасибо, письмо отправлено</div>
             <form class="form" id="formId">
                 <div class="product"></div>
                 <label class="field input">
-                    <input type="text" required="">
+                    <input name="user" type="text" required>
                     <span class="name">* Имя</span>
                     <span class="error">Проверьте правильность заполнения поля</span>
                 </label>
                 <label class="field input">
-                    <input type="text" required="">
+                    <input name="email" type="text" required>
                     <span class="name">* Эл. почта</span>
                     <span class="error">Проверьте правильность заполнения поля</span>
                 </label>
                 <label class="field text">
-                    <textarea required=""></textarea>
+                    <textarea name="text" required=""></textarea>
                     <span class="name">* Текст</span>
                     <span class="error">Проверьте правильность заполнения поля</span>
                 </label>
@@ -1263,6 +1266,7 @@
                         Подтверждаю согласие с политикой обработки персональных данных
                     </span>
                 </label>
+                <div class="g-recaptcha" data-sitekey="6Lf5cm8qAAAAAA5CyayWR__RPXrtDdjqeHhEW0gR"></div>
                 <button class="button circle primary blue" type="submit">
                     <span>Отправить</span>
                 </button>
@@ -1287,5 +1291,6 @@
     </script>
     <script async src="/js/index.js"></script>
     <script async src="/js/slider-swiper.js"></script>
+    <script async src="/js/smail.js"></script>
 </body>
 </html>
