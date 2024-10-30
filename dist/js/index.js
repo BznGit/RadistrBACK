@@ -140,15 +140,18 @@ buttons.forEach(button => {
 // Находим все кнопки в корзине
 const cartButtons = document.querySelectorAll('.table-row .cart-button');
 const popupWrapper = document.querySelector('.popup-wrapper');
-//edededededed
+
+
 cartButtons.forEach(button => {
     button.addEventListener('click', function() {
         // Находим родительский элемент .table-row
         const tableRow = this.closest('.table-row');
-
+    
         // Получаем название продукта
         const productName = tableRow.querySelector('.row-title .name').textContent;
         // Добавляем класс active к .popup-wrapper
+       
+        console.log('press>>', popupWrapper)
         popupWrapper.classList.add('active');
 
         // Вставляем название продукта в .popup-wrapper .product
@@ -168,12 +171,13 @@ popupClose.addEventListener('click', function() {
 });
 
 // Также убираем класс active при клике вне попапа
-document.addEventListener('click', function(event) {
+popupWrapper.addEventListener('click', function(event) {
+
     const popupWrapper = document.querySelector('.popup-wrapper');
     const popup = popupWrapper.querySelector('.popup');
 
     // Проверяем, был ли клик вне попапа
-    if (popupWrapper.classList.contains('active') && !popup.contains(event.target) && !popupWrapper.contains(event.target)) {
+    if (popupWrapper.classList.contains('active') && event.target.classList.contains('popup-wrapper')) {
         popupWrapper.classList.remove('active');
     }
 });
